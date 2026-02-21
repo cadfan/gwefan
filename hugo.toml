@@ -1,0 +1,97 @@
+baseURL = 'https://griffiths.cymru/'
+title = 'griffiths.cymru'
+theme = 'PaperMod'
+defaultContentLanguage = 'cy'
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.cy]
+    languageName = 'Cymraeg'
+    languageCode = 'cy'
+    contentDir = 'content/cy'
+    weight = 1
+    [languages.cy.params]
+      description = 'Gwefan bersonol Christopher Griffiths'
+    [[languages.cy.menus.main]]
+      identifier = 'hafan'
+      name = 'Hafan'
+      url = '/'
+      weight = 1
+    [[languages.cy.menus.main]]
+      identifier = 'amdanaf'
+      name = 'Amdanaf'
+      url = '/amdanaf/'
+      weight = 2
+    [[languages.cy.menus.main]]
+      identifier = 'prosiectau'
+      name = 'Prosiectau'
+      url = '/prosiectau/'
+      weight = 3
+    [[languages.cy.menus.main]]
+      identifier = 'blog-cy'
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.cy.menus.main]]
+      identifier = 'cysylltu'
+      name = 'Cysylltu'
+      url = '/cysylltu/'
+      weight = 5
+
+  [languages.en]
+    languageName = 'English'
+    languageCode = 'en'
+    contentDir = 'content/en'
+    weight = 2
+    [languages.en.params]
+      description = 'Christopher Griffiths personal website'
+    [[languages.en.menus.main]]
+      identifier = 'home'
+      name = 'Home'
+      url = '/en/'
+      weight = 1
+    [[languages.en.menus.main]]
+      identifier = 'about'
+      name = 'About'
+      url = '/en/about/'
+      weight = 2
+    [[languages.en.menus.main]]
+      identifier = 'projects'
+      name = 'Projects'
+      url = '/en/projects/'
+      weight = 3
+    [[languages.en.menus.main]]
+      identifier = 'blog-en'
+      name = 'Blog'
+      url = '/en/blog/'
+      weight = 4
+    [[languages.en.menus.main]]
+      identifier = 'contact'
+      name = 'Contact'
+      url = '/en/contact/'
+      weight = 5
+
+[params]
+  author = 'Christopher Griffiths'
+  env = 'production'
+  showReadingTime = true
+  showShareButtons = false
+  showBreadCrumbs = true
+  showPostNavLinks = true
+  defaultTheme = 'auto'
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = 'Croeso / Welcome'
+    Content = ''
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/cadfan'
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'

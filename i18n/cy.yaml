@@ -1,0 +1,33 @@
+- id: prev_page
+  translation: "Blaenorol"
+
+- id: next_page
+  translation: "Nesaf"
+
+- id: read_time
+  translation:
+    one : "1 mun"
+    other: "{{ .Count }} mun"
+
+- id: words
+  translation:
+    one : "gair"
+    other: "{{ .Count }} gair"
+
+- id: toc
+  translation: "Cynnwys"
+
+- id: translations
+  translation: "Cyfieithiadau"
+
+- id: home
+  translation: "Hafan"
+
+- id: edit_post
+  translation: "Golygu"
+
+- id: code_copy
+  translation: "cop\u00EFo"
+
+- id: code_copied
+  translation: "wedi'i cop\u00EFo!"
