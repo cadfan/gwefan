@@ -28,7 +28,7 @@ Currently in active private development and planned for public release once stab
 
 ## Architecture
 
-**Pipeline:** Libre 3 EU sensor &rarr; Shuggah &rarr; islet ingest API &rarr; SQLite &rarr; glucore engine &rarr; CLI / API
+{{< islet-pipeline >}}
 
 The system runs 24/7 on a Raspberry Pi 5B as a systemd service. All primary data is stored locally in SQLite under self-hosted control. Nightscout polling remains available as a fallback.
 
@@ -51,13 +51,13 @@ Glucose analytics: IOB decay curves from treatment history, trend analysis via l
 COB modelling with exponential carb absorption, autosens (sensitivity ratio from 24h deviation history), enhanced predictions combining IOB + COB + momentum, retrospective validation framework.
 
 **Phase 3.1 — Ingest Endpoints**
-Direct POST endpoints replacing Nightscout dependency. Nightscout-compatible format accepted from Shuggah. Deterministic UUID generation for deduplication.
+Direct POST endpoints replacing Nightscout dependency. Nightscout-compatible format accepted from xDrip4iOS clones (currently Zukka). Deterministic UUID generation for deduplication.
 
 **Phase 3.2 — Nightscout Relay**
 Fire-and-forget relay to upstream Nightscout for redundancy. Circuit breaker (opens after 5 failures, probes after 60s). Self-relay guard prevents infinite loops.
 
 **Phase 3.3 — API-Only Soak** *(current)*
-Shuggah on iPhone 12 Pro configured to POST directly to islet. Soak test in progress to verify stability before full cutover.
+Zukka on iPhone 12 Pro configured to POST directly to islet. Soak test in progress to verify stability before full cutover.
 
 ---
 
