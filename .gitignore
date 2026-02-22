@@ -4,3 +4,4 @@ resources/
 .agents/
 .claude/
 deploy.sh
+translation/
