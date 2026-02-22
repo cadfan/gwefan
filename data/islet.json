@@ -1,0 +1,112 @@
+{
+  "sloc": 5642,
+  "test_sloc": 6132,
+  "test_count": 587,
+  "doc_lines": 4961,
+  "total_commits": 59,
+  "language": "Python 3.13.5",
+  "runtime": "Raspberry Pi 5B, systemd, SQLite",
+  "status": "3.3 soak — Zukka connected, API-only soak in progress",
+  "commits": [
+    {
+      "date": "2026-02-22",
+      "hash": "a6b3d82",
+      "message": "Test gwefan sync hook (deploy)"
+    },
+    {
+      "date": "2026-02-22",
+      "hash": "15f6471",
+      "message": "Test gwefan sync hook"
+    },
+    {
+      "date": "2026-02-22",
+      "hash": "f624b06",
+      "message": "Add sync_gwefan.py to update website stats from islet repo"
+    },
+    {
+      "date": "2026-02-22",
+      "hash": "595ca12",
+      "message": "Update docs: Phase 3.3 soak status, Zukka pipeline, sgv.json endpoint"
+    },
+    {
+      "date": "2026-02-22",
+      "hash": "40ae873",
+      "message": "Add GET /entries/sgv.json for Zukka CGM polling"
+    },
+    {
+      "date": "2026-02-22",
+      "hash": "9275fb8",
+      "message": "Update progress report: Zukka replaces Shuggah"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "37d0a3d",
+      "message": "Return records with _id in POST response (Nightscout compat)"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "3bb88aa",
+      "message": "Update progress report: Phase 3.3 soak with Shuggah compatibility"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "bd53dee",
+      "message": "Shuggah/xDrip4iOS compatibility: status, treatments GET/DELETE, dedup"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "d21e9a2",
+      "message": "Phase 3.3 prep: extract backoff helper, harden daemon, add 29 tests"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "df05b19",
+      "message": "Add relay timeout and mixed-batch test scenarios"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "10cd4d0",
+      "message": "Add received count to ingest API responses for duplicate detection"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "9b51a95",
+      "message": "Fix post-mortem findings: complete fixture migration, add _relay_client default"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "c01042d",
+      "message": "Cache SHA-1 api-secret hash at init instead of recomputing per request"
+    },
+    {
+      "date": "2026-02-21",
+      "hash": "47135ab",
+      "message": "Standardize API error format, consolidate relay config, shared test fixture"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "a95b713",
+      "message": "Replace string-matching with typed CircuitBreakerOpenError exception"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "ff2a626",
+      "message": "Add relay circuit breaker: open after 5 failures, probe after 60s"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "d4ea7b9",
+      "message": "Fix relay _post() to not parse response body"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "c8dd48f",
+      "message": "Add Nightscout relay with self-relay guard and 5s timeout"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "4ef5c3d",
+      "message": "Fix treatment validation gap, add conftest.py, centralize constants"
+    }
+  ]
+}
