@@ -36,6 +36,7 @@ contentDir = 'content/en'
   env = 'production'
   showReadingTime = true
   showShareButtons = false
+  showAuthor = false
   showBreadCrumbs = true
   showPostNavLinks = true
   defaultTheme = 'auto'
@@ -53,7 +54,15 @@ contentDir = 'content/en'
 
   [params.homeInfoParams]
     Title = 'Christopher Griffiths'
-    Content = 'Independent builder focused on practical software systems, particularly in health data, simulation tooling and self-hosted infrastructure.'
+    Content = """Independent builder focused on practical software systems, \
+particularly in health data, simulation tooling and self-hosted infrastructure.
+
+### Areas of interest
+
+— Sim racing tooling and telemetry workflows  \n\
+— Local-first health data and glucose modelling  \n\
+— Self-hosted systems and infrastructure  \n\
+— Welsh language and technology"""
 
   [[params.socialIcons]]
     name = 'github'

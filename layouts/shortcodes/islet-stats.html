@@ -1,0 +1,21 @@
+{{- $data := site.Data.islet -}}
+{{- if $data -}}
+<table>
+  <tbody>
+    <tr><td><strong>Language</strong></td><td>{{ $data.language }}</td></tr>
+    <tr><td><strong>Implementation</strong></td><td>~{{ $data.sloc | lang.FormatNumber 0 }} SLOC (source lines of code)</td></tr>
+    <tr><td><strong>Tests</strong></td><td>{{ $data.test_count | lang.FormatNumber 0 }} passing (~{{ $data.test_sloc | lang.FormatNumber 0 }} SLOC)</td></tr>
+    <tr><td><strong>Documentation</strong></td><td>~{{ $data.doc_lines | lang.FormatNumber 0 }} lines</td></tr>
+    <tr><td><strong>Runtime</strong></td><td>{{ $data.runtime }}</td></tr>
+    <tr><td><strong>Status</strong></td><td>{{ $data.status }}</td></tr>
+  </tbody>
+</table>
+{{- else -}}
+<table>
+  <tbody>
+    <tr><td><strong>Language</strong></td><td>Python 3.13.5</td></tr>
+    <tr><td><strong>Runtime</strong></td><td>Raspberry Pi 5B, systemd, SQLite</td></tr>
+    <tr><td><strong>Status</strong></td><td>In active development</td></tr>
+  </tbody>
+</table>
+{{- end -}}

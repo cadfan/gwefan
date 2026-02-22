@@ -1,0 +1,15 @@
+{{- $data := site.Data.islet -}}
+{{- if $data -}}
+<table>
+  <thead>
+    <tr><th>Date</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    {{- range $data.commits }}
+    <tr><td>{{ .date }}</td><td>{{ .message }}</td></tr>
+    {{- end }}
+  </tbody>
+</table>
+{{- else -}}
+<p><em>Commit history unavailable — run <code>scripts/update-stats.sh</code> to generate.</em></p>
+{{- end -}}
