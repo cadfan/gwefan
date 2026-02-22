@@ -1,5 +1,99 @@
+/* griffiths.cymru — custom styles */
+
+:root {
+  --accent: #d4924b;
+}
+
+/* Slightly warmer dark background */
+.dark {
+  --theme: #1a1b1e;
+  --entry: #22232a;
+}
+
+/* Inter font family */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Heading refinements */
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+}
+
+/* Active nav underline */
+.menu a.active {
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Link hover accent */
+.post-content a:hover,
+.toc a:hover {
+  color: var(--accent);
+}
+
+/* Blockquote accent border */
+blockquote {
+  border-left-color: var(--accent);
+}
+
+/* Horizontal rule accent */
+hr {
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+/* Scroll-to-top hover */
+.top-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Social icon hover */
+.social-icons a:hover svg {
+  fill: var(--accent);
+}
+
+/* Card hover border */
+.post-entry:hover {
+  border-color: var(--accent);
+}
+
+/* Rounder cards */
+.post-entry {
+  border-radius: 10px;
+}
+
+/* Homepage info section */
+.first-entry .entry-content {
+  font-size: 1rem;
+}
+
+/* Homepage h3 as subtle uppercase label */
+.post-content h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-top: 1.5rem;
+}
+
+/* islet icon float */
 .post-content img[alt="islet icon"] {
   float: left;
   margin: 0 1.5rem 1rem 0;
   border-radius: 8px;
+}
+
+/* Footer: reduce opacity and size */
+.footer {
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+/* Smaller breadcrumb font */
+.breadcrumbs {
+  font-size: 0.8rem;
 }

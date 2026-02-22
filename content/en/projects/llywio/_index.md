@@ -2,6 +2,7 @@
 title: "llywio"
 description: "Experimental route optimisation system for multi-stop delivery work"
 summary: "Route optimisation for multi-stop delivery. SwiftUI/iOS. Early-stage."
+showReadingTime: false
 ---
 
 Experimental route optimisation system for multi-stop delivery work. Explores practical routing strategies and real-world constraints rather than purely theoretical optimisation.

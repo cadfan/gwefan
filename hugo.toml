@@ -41,9 +41,19 @@ contentDir = 'content/en'
   defaultTheme = 'auto'
   ShowCodeCopyButtons = true
 
+  [params.label]
+    text = 'griffiths.cymru'
+
+  [params.cover]
+    hiddenInList = true
+
+  [params.assets]
+    theme_color = '#1a1b1e'
+    msapplication_TileColor = '#1a1b1e'
+
   [params.homeInfoParams]
     Title = 'Christopher Griffiths'
-    Content = ''
+    Content = 'Independent builder focused on practical software systems, particularly in health data, simulation tooling and self-hosted infrastructure.'
 
   [[params.socialIcons]]
     name = 'github'
