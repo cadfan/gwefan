@@ -2,12 +2,17 @@
   "sloc": 5636,
   "test_sloc": 6132,
   "test_count": 587,
-  "doc_lines": 4961,
-  "total_commits": 60,
+  "doc_lines": 4976,
+  "total_commits": 61,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
+    {
+      "date": "2026-02-22",
+      "hash": "d6a3531",
+      "message": "Update docs: post-mortem cleanup complete, smoke test, SLOC/commit counts"
+    },
     {
       "date": "2026-02-22",
       "hash": "31a3e4a",
@@ -102,11 +107,6 @@
       "date": "2026-02-20",
       "hash": "d4ea7b9",
       "message": "Fix relay _post() to not parse response body"
-    },
-    {
-      "date": "2026-02-20",
-      "hash": "c8dd48f",
-      "message": "Add Nightscout relay with self-relay guard and 5s timeout"
     }
   ]
 }
