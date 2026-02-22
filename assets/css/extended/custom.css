@@ -278,3 +278,12 @@ hr {
 .blog-pullquote p {
   margin: 0;
 }
+
+/* Post note / disclaimer */
+.post-note {
+  font-size: 0.8rem;
+  color: var(--secondary, #888);
+  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  padding-top: 0.8rem;
+  margin-top: 2rem;
+}
