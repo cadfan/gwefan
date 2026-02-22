@@ -1,5 +1,10 @@
 /* griffiths.cymru — custom styles */
 
+/* ── Hide text caret on non-editable content ── */
+body {
+  caret-color: transparent;
+}
+
 /* ── Accent colours ── */
 :root {
   --accent: #b5792e; /* darker amber for light mode contrast */
