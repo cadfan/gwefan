@@ -53,5 +53,7 @@ contentDir = 'content/en'
   home = ['HTML', 'RSS']
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     style = 'monokai'

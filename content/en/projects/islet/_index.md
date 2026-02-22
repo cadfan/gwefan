@@ -2,7 +2,13 @@
 title: "islet"
 description: "A local-first glucose intelligence platform for Type 1 diabetes"
 summary: "Local-first glucose intelligence platform for Type 1 diabetes. Self-hosted on Raspberry Pi."
+cover:
+  image: "icon.png"
+  alt: "islet icon"
+  relative: true
 ---
+
+<img src="icon.png" alt="islet icon" width="128">
 
 A local-first glucose intelligence platform for Type 1 diabetes. Designed around reliability, auditability and self-hosted control rather than dependence on commercial cloud services.
 
@@ -18,7 +24,7 @@ Currently in active private development and planned for public release once stab
 |---|---|
 | **Language** | Python 3.13.5 |
 | **Implementation** | ~5,860 SLOC (source lines of code) |
-| **Tests** | ~6,316 SLOC (581 passing) |
+| **Tests** | 581 passing (~6,316 SLOC) |
 | **Documentation** | ~650 SLOC |
 | **Runtime** | Raspberry Pi 5B, systemd, SQLite |
 | **Status** | Phase 3.3 — API-only soak in progress |
