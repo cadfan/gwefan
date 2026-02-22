@@ -197,14 +197,17 @@ hr {
 
 /* ── Blog post enhancements ── */
 
-/* Lead paragraph */
+/* Lead paragraph — editorial deck */
 .blog-lead {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--primary, #222);
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: var(--primary);
+  font-style: italic;
   border-left: 3px solid var(--accent);
-  padding-left: 1rem;
-  margin-bottom: 1.2rem;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.8rem;
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+  border-radius: 0 4px 4px 0;
 }
 
 /* Spec document cards */
@@ -264,26 +267,47 @@ hr {
   margin-top: 0.1rem;
 }
 
-/* Pull quote */
+/* Pull quote — editorial centrepiece */
 .blog-pullquote {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   font-style: normal;
   color: var(--accent);
-  border-left: 3px solid var(--accent);
-  padding: 0.3rem 0 0.3rem 1rem;
-  margin: 1.5rem 0;
+  text-align: center;
+  border-left: none;
+  border-inline-start: none;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  padding: 2rem 2rem 1.6rem;
+  margin: 2.5rem 0;
   background: none;
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
 }
+
+.blog-pullquote::before {
+  content: '\201C';
+  display: block;
+  font-size: 3.5rem;
+  color: var(--accent);
+  opacity: 0.3;
+  line-height: 0.5;
+  margin-bottom: 0.6rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
 .blog-pullquote p {
   margin: 0;
 }
 
 /* Post note / disclaimer */
 .post-note {
-  font-size: 0.8rem;
-  color: var(--secondary, #888);
-  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
-  padding-top: 0.8rem;
-  margin-top: 2rem;
+  font-size: 0.82rem;
+  color: var(--secondary);
+  border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+  padding: 1rem 0 0 1rem;
+  margin-top: 2.5rem;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  line-height: 1.6;
 }
