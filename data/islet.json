@@ -1,27 +1,17 @@
 {
-  "sloc": 5642,
+  "sloc": 5641,
   "test_sloc": 6132,
   "test_count": 587,
   "doc_lines": 4961,
-  "total_commits": 60,
+  "total_commits": 58,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
     {
       "date": "2026-02-22",
-      "hash": "18b8f68",
-      "message": "Test gwefan sync hook (full pipeline)"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "a6b3d82",
-      "message": "Test gwefan sync hook (deploy)"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "15f6471",
-      "message": "Test gwefan sync hook"
+      "hash": "d3c2c4b",
+      "message": "Move inline json imports to module-level in ingest_routes.py"
     },
     {
       "date": "2026-02-22",
@@ -107,6 +97,16 @@
       "date": "2026-02-20",
       "hash": "c8dd48f",
       "message": "Add Nightscout relay with self-relay guard and 5s timeout"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "4ef5c3d",
+      "message": "Fix treatment validation gap, add conftest.py, centralize constants"
+    },
+    {
+      "date": "2026-02-20",
+      "hash": "b2c126b",
+      "message": "Schema v6 quality flags, enhanced ingest validation, cross-platform test runners"
     }
   ]
 }
