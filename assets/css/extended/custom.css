@@ -194,3 +194,87 @@ hr {
 .home-info .entry-content {
   max-width: 540px;
 }
+
+/* ── Blog post enhancements ── */
+
+/* Lead paragraph */
+.blog-lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--primary, #222);
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Spec document cards */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+.spec-card {
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  background: var(--entry, #fff);
+  transition: border-color 0.2s ease;
+}
+.spec-card:hover {
+  border-color: var(--accent);
+}
+.spec-card-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary, #222);
+  margin-bottom: 0.15rem;
+}
+.spec-card-desc {
+  font-size: 0.72rem;
+  color: var(--secondary, #888);
+  line-height: 1.45;
+}
+
+/* Stat row */
+.blog-stat-row {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.8rem 0 1.2rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+}
+.blog-stat {
+  text-align: center;
+  flex: 1;
+}
+.blog-stat-num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.blog-stat-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--secondary, #888);
+  margin-top: 0.1rem;
+}
+
+/* Pull quote */
+.blog-pullquote {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+  padding: 0.3rem 0 0.3rem 1rem;
+  margin: 1.5rem 0;
+  background: none;
+}
+.blog-pullquote p {
+  margin: 0;
+}
