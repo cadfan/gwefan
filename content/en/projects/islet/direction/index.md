@@ -1,11 +1,13 @@
 ---
 title: "Direction"
 description: "From glucose recording to metabolic understanding"
+date: 2026-02-22
+lastmod: 2026-02-22
 showReadingTime: true
 ShowToc: true
 ---
 
-<p class="blog-lead">The objective is simple to state but difficult to build: a system that learns how your metabolism actually behaves.</p>
+<p class="blog-lead">The objective is simple to state but difficult to build: a system that learns how a specific metabolism behaves in practice.</p>
 
 ## From recording to understanding
 
@@ -15,7 +17,7 @@ In reality, physiological response varies. Insulin action changes across time, m
 
 What is missing is a system that learns continuously from real historical data and adapts its internal understanding over time.
 
-The goal of islet and glucore is to move beyond recording into understanding. The long-term objective is a local-first metabolic intelligence system that learns, over time, how a particular body responds in practice. Not in theory, not from generic population models, but from real historical behaviour.
+The goal of islet and glucore is to move beyond recording into understanding. The long-term objective is a local-first metabolic intelligence system that learns, over time, how a particular body responds in practice. Not in theory or from generic population models, but from real historical behaviour.
 
 This means learning patterns such as:
 
@@ -40,7 +42,7 @@ This means learning patterns such as:
 
 Rather than relying on fixed parameters, the system aims to continuously refine its internal model using observed data.
 
-<blockquote class="blog-pullquote">The purpose is not automation, but clarity: decision support grounded in what has actually happened before.</blockquote>
+<blockquote class="blog-pullquote">The purpose is not automation, but clarity: carefully constrained decision support grounded in what has actually happened before.</blockquote>
 
 ## Why local-first
 
@@ -91,7 +93,7 @@ The intention is not to produce opaque predictions, but to build a progressively
 
 Success is not a perfect prediction curve or a fully automated system.
 
-A successful outcome would be a system that reflects how a specific body actually behaves, with predictions that are transparent, bounded and explainable. Uncertainty would be clearly communicated rather than hidden. Behaviour would remain reliable under imperfect data. Decision support would be grounded in real historical outcomes, and the platform would improve over time rather than remaining static.
+A successful outcome would be a system that reflects how a specific body actually behaves, with predictions that are transparent, bounded and explainable. Uncertainty would be clearly communicated rather than hidden. Behaviour would remain reliable under imperfect data. Decision support would be grounded in real historical outcomes and the platform would improve over time rather than remaining static.
 
 In practical terms, success means clearer understanding, fewer surprises and better-informed decisions.
 
@@ -100,5 +102,7 @@ The system does not replace clinical judgement and does not make autonomous dosi
 ---
 
 The direction is long-term and iterative. The foundation is being built first: reliable ingestion, correct storage, safe modelling and observable behaviour. The intelligence layer develops on top of that, gradually, through measured refinement rather than assumption.
+
+The near-term work is building a trustworthy foundation: ingestion, storage, validation and modelling that can be measured against reality.
 
 <p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions.</p>
