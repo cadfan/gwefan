@@ -66,7 +66,7 @@ Zukka on iPhone 12 Pro configured to POST directly to islet. Soak test in progre
 | Phase | Scope | Status |
 |-------|-------|--------|
 | 3.3 cutover | Switch to API-only ingest, retire Nightscout polling | Pending soak completion |
-| 4 | Direct Libre 3 BLE ingestion, replacing Shuggah | Spec outline only |
+| 4 | Direct Libre 3 BLE ingestion, replacing Zukka | Spec outline only |
 
 Phase 4 (direct BLE sensor communication) is expected to be the highest technical risk stage.
 
