@@ -1,0 +1,155 @@
+{{- $data := site.Data.islet -}}
+<style>
+/* ── islet intro ── */
+.islet-intro {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.islet-intro-icon {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+}
+.islet-intro-body {
+  flex: 1;
+  min-width: 0;
+}
+.islet-intro-body p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--secondary, #888);
+  margin: 0 0 0.5rem;
+}
+.islet-intro-body p:last-child {
+  margin-bottom: 0;
+}
+.islet-status-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--secondary, #888);
+  margin-top: 0.6rem;
+}
+.islet-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: islet-status-blink 2.5s ease-in-out infinite;
+}
+@keyframes islet-status-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ── Stats grid ── */
+.islet-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.islet-stat {
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  background: var(--entry, #fff);
+}
+.islet-stat-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--primary, #222);
+  line-height: 1.3;
+}
+.islet-stat-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--secondary, #888);
+  margin-top: 0.1rem;
+}
+
+/* Status card spans full width */
+.islet-stat-status {
+  grid-column: 1 / -1;
+  border-color: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.islet-stat-status .islet-stat-value {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .islet-intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .islet-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
+<div class="islet-intro">
+  <img class="islet-intro-icon" src="icon.png" alt="islet icon" width="88" height="88">
+  <div class="islet-intro-body">
+    <p>Designed around reliability, auditability and self-hosted control rather than dependence on commercial cloud services.</p>
+    <p>The long-term aim is personalised modelling: learning behavioural and physiological patterns over time and using that knowledge to improve prediction and provide carefully constrained decision support around meals and insulin, with strong safety controls and transparent operation.</p>
+    <div class="islet-status-line">
+      <span class="islet-status-dot"></span>
+      In active private development — planned for public release once stable
+    </div>
+  </div>
+</div>
+
+<div class="islet-stats">
+  {{- if $data }}
+  <div class="islet-stat">
+    <div class="islet-stat-value">{{ $data.language }}</div>
+    <div class="islet-stat-label">Language</div>
+  </div>
+  <div class="islet-stat">
+    <div class="islet-stat-value">~{{ $data.sloc | lang.FormatNumber 0 }}</div>
+    <div class="islet-stat-label">Source lines</div>
+  </div>
+  <div class="islet-stat">
+    <div class="islet-stat-value">{{ $data.test_count | lang.FormatNumber 0 }} passing</div>
+    <div class="islet-stat-label">Tests</div>
+  </div>
+  <div class="islet-stat">
+    <div class="islet-stat-value">~{{ $data.doc_lines | lang.FormatNumber 0 }} lines</div>
+    <div class="islet-stat-label">Documentation</div>
+  </div>
+  <div class="islet-stat">
+    <div class="islet-stat-value">{{ $data.runtime }}</div>
+    <div class="islet-stat-label">Runtime</div>
+  </div>
+  <div class="islet-stat">
+    <div class="islet-stat-value">{{ $data.total_commits }}</div>
+    <div class="islet-stat-label">Commits</div>
+  </div>
+  <div class="islet-stat islet-stat-status">
+    <div class="islet-stat-value">{{ $data.status }}</div>
+    <div class="islet-stat-label">Status</div>
+  </div>
+  {{- else }}
+  <div class="islet-stat">
+    <div class="islet-stat-value">Python 3.13.5</div>
+    <div class="islet-stat-label">Language</div>
+  </div>
+  <div class="islet-stat">
+    <div class="islet-stat-value">Raspberry Pi 5B</div>
+    <div class="islet-stat-label">Runtime</div>
+  </div>
+  <div class="islet-stat islet-stat-status">
+    <div class="islet-stat-value">In active development</div>
+    <div class="islet-stat-label">Status</div>
+  </div>
+  {{- end }}
+</div>

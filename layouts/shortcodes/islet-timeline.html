@@ -1,0 +1,198 @@
+<style>
+/* ── islet progress timeline ── */
+.timeline {
+  position: relative;
+  padding: 0;
+  margin: 1rem 0 0.5rem;
+  list-style: none;
+}
+
+/* Vertical spine */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.tl-item {
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 1.4rem;
+}
+.tl-item:last-child {
+  padding-bottom: 0;
+}
+
+/* ── Node dots ── */
+.tl-dot {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--theme, #fff);
+  z-index: 1;
+}
+
+/* Complete: filled */
+.tl-item[data-status="complete"] .tl-dot {
+  background: var(--accent);
+}
+
+/* Current: pulsing ring */
+.tl-item[data-status="current"] .tl-dot {
+  background: var(--accent);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent);
+  animation: tl-pulse 2.5s ease-in-out infinite;
+}
+@keyframes tl-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent); }
+  50% { box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+
+/* Planned: hollow, muted */
+.tl-item[data-status="planned"] .tl-dot {
+  border-color: var(--secondary, #888);
+  border-style: dashed;
+  background: var(--theme, #fff);
+}
+
+/* ── Content ── */
+.tl-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.tl-phase {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary, #222);
+  line-height: 1.4;
+}
+.tl-badge {
+  font-size: 0.58rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.1em 0.45em;
+  border-radius: 3px;
+  line-height: 1;
+  white-space: nowrap;
+  position: relative;
+  top: -1px;
+}
+.tl-item[data-status="complete"] .tl-badge {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+}
+.tl-item[data-status="current"] .tl-badge {
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  color: var(--accent);
+}
+.tl-item[data-status="planned"] .tl-badge {
+  background: color-mix(in srgb, var(--secondary, #888) 15%, transparent);
+  color: var(--secondary, #888);
+}
+
+.tl-desc {
+  font-size: 0.78rem;
+  color: var(--secondary, #888);
+  line-height: 1.5;
+  margin-top: 0.2rem;
+}
+.tl-item[data-status="planned"] .tl-desc {
+  opacity: 0.7;
+}
+
+.tl-stat {
+  font-size: 0.68rem;
+  color: var(--accent);
+  margin-top: 0.2rem;
+  font-weight: 500;
+}
+</style>
+
+<ol class="timeline">
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 1 — Core Pipeline</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">Nightscout polling, SQLite storage, daemon with backfill, CLI. Hardened with dual-signal health monitoring, systemd timer, and 48-hour soak test.</div>
+    <div class="tl-stat">23 files &middot; 1,070 lines &middot; first implementation session</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 1.5 — Meal Logging</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">AI-assisted carb estimation via Gemini, Claude and GPT. Photo and text input, confirmation workflow, treatment storage. Flask API with session workflow.</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 2.0 — glucore Engine</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">IOB from oref0 exponential curves, trend analysis via linear regression, configurable prediction windows. Safety contract enforcement on all outputs.</div>
+    <div class="tl-stat">6 modules &middot; 98 tests &middot; validated against live data</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 2.1 — glucore Enhancements</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">COB modelling with exponential carb absorption, autosens sensitivity adaptation, enhanced predictions combining IOB + COB + momentum, retrospective validation framework.</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 3.1 — Ingest Endpoints</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">Direct POST endpoints replacing Nightscout dependency. Nightscout-compatible format accepted from xDrip4iOS clones. Deterministic UUID-5 deduplication.</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 3.2 — Nightscout Relay</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">Fire-and-forget relay to upstream Nightscout for redundancy. Circuit breaker with automatic recovery. Self-relay guard prevents infinite loops.</div>
+  </li>
+
+  <li class="tl-item" data-status="current">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 3.3 — API-Only Soak</span>
+      <span class="tl-badge">In Progress</span>
+    </div>
+    <div class="tl-desc">Zukka on iPhone 12 Pro posting directly to islet. Soak test verifying stability before full cutover to API-only ingest mode and Nightscout polling retirement.</div>
+  </li>
+
+  <li class="tl-item" data-status="planned">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 4 — Direct BLE Ingestion</span>
+      <span class="tl-badge">Planned</span>
+    </div>
+    <div class="tl-desc">Direct Libre 3 BLE sensor communication from an iPhone islet app, replacing Zukka. Sensor lifecycle handling, background reliability and recovery. Highest technical risk stage.</div>
+  </li>
+
+</ol>

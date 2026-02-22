@@ -174,13 +174,6 @@ hr {
   font-size: 1rem;
 }
 
-/* ── islet icon float ── */
-.post-content img[alt="islet icon"] {
-  float: left;
-  margin: 0 1.5rem 1rem 0;
-  border-radius: 8px;
-}
-
 /* ── Footer ── */
 .footer {
   opacity: 0.6;
