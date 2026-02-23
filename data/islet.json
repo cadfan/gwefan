@@ -3,11 +3,16 @@
   "test_sloc": 6414,
   "test_count": 621,
   "doc_lines": 5056,
-  "total_commits": 69,
+  "total_commits": 70,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 cutover — API-only ingest mode live",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "ede8b38",
+      "message": "Fix missing CFBundleIdentifier in Info.plist"
+    },
     {
       "date": "2026-02-23",
       "hash": "62618a0",
@@ -102,11 +107,6 @@
       "date": "2026-02-21",
       "hash": "bd53dee",
       "message": "Shuggah/xDrip4iOS compatibility: status, treatments GET/DELETE, dedup"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "d21e9a2",
-      "message": "Phase 3.3 prep: extract backoff helper, harden daemon, add 29 tests"
     }
   ]
 }
