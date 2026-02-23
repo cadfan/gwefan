@@ -1,112 +1,11 @@
 {
-  "sloc": 5712,
-  "test_sloc": 6414,
-  "test_count": 621,
+  "sloc": 6001,
+  "test_sloc": 6659,
+  "test_count": 622,
   "doc_lines": 5056,
   "total_commits": 68,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
-  "status": "3.3 cutover — API-only ingest mode live",
-  "commits": [
-    {
-      "date": "2026-02-23",
-      "hash": "428d898",
-      "message": "Phase 3.3 cutover: API-only ingest mode live, Nightscout polling disabled"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "e127041",
-      "message": "Post-mortem RPI: fix API logging, remove dead code, add device observability"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "cad39a8",
-      "message": "Fix ruff import ordering regression in app.py"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "1d49bc2",
-      "message": "Add per-device token auth and conditional relay routing"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "19f043c",
-      "message": "Add ruff linter, pyright type checking, and GitHub Actions CI"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "316faca",
-      "message": "Add GOALS.yaml with 12 forward-looking fitness goals"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "a3c4bf1",
-      "message": "Post-mortem RPI: module-level imports, narrow except, deploy script"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "d6a3531",
-      "message": "Update docs: post-mortem cleanup complete, smoke test, SLOC/commit counts"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "31a3e4a",
-      "message": "Fix smoke test: experiments/test requires auth (expect 401)"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "43ba801",
-      "message": "Post-mortem cleanup: document quality_flag policy, refactor SQL, add smoke test"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "d3c2c4b",
-      "message": "Move inline json imports to module-level in ingest_routes.py"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "f624b06",
-      "message": "Add sync_gwefan.py to update website stats from islet repo"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "595ca12",
-      "message": "Update docs: Phase 3.3 soak status, Zukka pipeline, sgv.json endpoint"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "40ae873",
-      "message": "Add GET /entries/sgv.json for Zukka CGM polling"
-    },
-    {
-      "date": "2026-02-22",
-      "hash": "9275fb8",
-      "message": "Update progress report: Zukka replaces Shuggah"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "37d0a3d",
-      "message": "Return records with _id in POST response (Nightscout compat)"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "3bb88aa",
-      "message": "Update progress report: Phase 3.3 soak with Shuggah compatibility"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "bd53dee",
-      "message": "Shuggah/xDrip4iOS compatibility: status, treatments GET/DELETE, dedup"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "d21e9a2",
-      "message": "Phase 3.3 prep: extract backoff helper, harden daemon, add 29 tests"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "df05b19",
-      "message": "Add relay timeout and mixed-batch test scenarios"
-    }
-  ]
+  "status": "Phase 3.3 cutover — API-only ingest mode live",
+  "commits": [{"date":"2026-02-23","hash":"428d898","message":"Phase 3.3 cutover: API-only ingest mode live, Nightscout polling disabled"},{"date":"2026-02-23","hash":"e127041","message":"Post-mortem RPI: fix API logging, remove dead code, add device observability"},{"date":"2026-02-23","hash":"cad39a8","message":"Fix ruff import ordering regression in app.py"},{"date":"2026-02-23","hash":"1d49bc2","message":"Add per-device token auth and conditional relay routing"},{"date":"2026-02-23","hash":"19f043c","message":"Add ruff linter, pyright type checking, and GitHub Actions CI"},{"date":"2026-02-23","hash":"316faca","message":"Add GOALS.yaml with 12 forward-looking fitness goals"},{"date":"2026-02-23","hash":"a3c4bf1","message":"Post-mortem RPI: module-level imports, narrow except, deploy script"},{"date":"2026-02-22","hash":"d6a3531","message":"Update docs: post-mortem cleanup complete, smoke test, SLOC/commit counts"},{"date":"2026-02-22","hash":"31a3e4a","message":"Fix smoke test: experiments/test requires auth (expect 401)"},{"date":"2026-02-22","hash":"43ba801","message":"Post-mortem cleanup: document quality_flag policy, refactor SQL, add smoke test"},{"date":"2026-02-22","hash":"d3c2c4b","message":"Move inline json imports to module-level in ingest_routes.py"},{"date":"2026-02-22","hash":"f624b06","message":"Add sync_gwefan.py to update website stats from islet repo"},{"date":"2026-02-22","hash":"595ca12","message":"Update docs: Phase 3.3 soak status, Zukka pipeline, sgv.json endpoint"},{"date":"2026-02-22","hash":"40ae873","message":"Add GET /entries/sgv.json for Zukka CGM polling"},{"date":"2026-02-22","hash":"9275fb8","message":"Update progress report: Zukka replaces Shuggah"},{"date":"2026-02-21","hash":"37d0a3d","message":"Return records with _id in POST response (Nightscout compat)"},{"date":"2026-02-21","hash":"3bb88aa","message":"Update progress report: Phase 3.3 soak with Shuggah compatibility"},{"date":"2026-02-21","hash":"bd53dee","message":"Shuggah/xDrip4iOS compatibility: status, treatments GET/DELETE, dedup"},{"date":"2026-02-21","hash":"d21e9a2","message":"Phase 3.3 prep: extract backoff helper, harden daemon, add 29 tests"},{"date":"2026-02-21","hash":"df05b19","message":"Add relay timeout and mixed-batch test scenarios"}]
 }
