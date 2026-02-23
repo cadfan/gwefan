@@ -1,13 +1,18 @@
 {
-  "sloc": 5636,
+  "sloc": 5637,
   "test_sloc": 6132,
   "test_count": 587,
-  "doc_lines": 4976,
-  "total_commits": 61,
+  "doc_lines": 4991,
+  "total_commits": 62,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "a3c4bf1",
+      "message": "Post-mortem RPI: module-level imports, narrow except, deploy script"
+    },
     {
       "date": "2026-02-22",
       "hash": "d6a3531",
@@ -102,11 +107,6 @@
       "date": "2026-02-20",
       "hash": "ff2a626",
       "message": "Add relay circuit breaker: open after 5 failures, probe after 60s"
-    },
-    {
-      "date": "2026-02-20",
-      "hash": "d4ea7b9",
-      "message": "Fix relay _post() to not parse response body"
     }
   ]
 }
