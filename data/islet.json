@@ -2,12 +2,27 @@
   "sloc": 5712,
   "test_sloc": 6414,
   "test_count": 621,
-  "doc_lines": 5056,
-  "total_commits": 70,
+  "doc_lines": 3109,
+  "total_commits": 73,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 cutover — API-only ingest mode live",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "fa74c8d",
+      "message": "Fix ios goal check paths: Sources/ â†’ islet/ (Xcode app convention)"
+    },
+    {
+      "date": "2026-02-23",
+      "hash": "09afbc6",
+      "message": "Merge ios-scaffold: SwiftUI app with XcodeGen, models, network layer, dashboard"
+    },
+    {
+      "date": "2026-02-23",
+      "hash": "7ea0e53",
+      "message": "Add generated islet.xcodeproj"
+    },
     {
       "date": "2026-02-23",
       "hash": "ede8b38",
@@ -92,21 +107,6 @@
       "date": "2026-02-22",
       "hash": "9275fb8",
       "message": "Update progress report: Zukka replaces Shuggah"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "37d0a3d",
-      "message": "Return records with _id in POST response (Nightscout compat)"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "3bb88aa",
-      "message": "Update progress report: Phase 3.3 soak with Shuggah compatibility"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "bd53dee",
-      "message": "Shuggah/xDrip4iOS compatibility: status, treatments GET/DELETE, dedup"
     }
   ]
 }
