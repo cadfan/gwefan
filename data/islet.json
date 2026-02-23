@@ -1,13 +1,18 @@
 {
-  "sloc": 5637,
+  "sloc": 5638,
   "test_sloc": 6132,
   "test_count": 587,
   "doc_lines": 4991,
-  "total_commits": 63,
+  "total_commits": 64,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "19f043c",
+      "message": "Add ruff linter, pyright type checking, and GitHub Actions CI"
+    },
     {
       "date": "2026-02-23",
       "hash": "316faca",
@@ -102,11 +107,6 @@
       "date": "2026-02-21",
       "hash": "47135ab",
       "message": "Standardize API error format, consolidate relay config, shared test fixture"
-    },
-    {
-      "date": "2026-02-20",
-      "hash": "a95b713",
-      "message": "Replace string-matching with typed CircuitBreakerOpenError exception"
     }
   ]
 }
