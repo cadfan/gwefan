@@ -3,15 +3,33 @@
   "test_sloc": 6414,
   "test_count": 621,
   "doc_lines": 3109,
-  "total_commits": 73,
-  "language": "Python 3.13.5",
+  "total_commits": 75,
+  "language": "Python 3.13.5 + Swift 6.2",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
-  "status": "3.3 cutover — API-only ingest mode live",
+  "status": "iOS app — food logging + Warm Amber theme",
+  "theme": {
+    "accent":       "#d4924b",
+    "accent_light": "#b5792e",
+    "base":         "#1d1e20",
+    "card":         "#2e2e33",
+    "text_primary": "#dadadb",
+    "text_secondary": "#9b9c9d",
+    "range_urgent_low":  "#6366f1",
+    "range_low":         "#818cf8",
+    "range_good":        "#4ade80",
+    "range_high":        "#fb923c",
+    "range_urgent_high": "#ef4444"
+  },
   "commits": [
     {
       "date": "2026-02-23",
+      "hash": "ea41ece",
+      "message": "Add food input screen + Warm Amber/Blue Lows theme"
+    },
+    {
+      "date": "2026-02-23",
       "hash": "fa74c8d",
-      "message": "Fix ios goal check paths: Sources/ â†’ islet/ (Xcode app convention)"
+      "message": "Fix ios goal check paths: Sources/ → islet/ (Xcode app convention)"
     },
     {
       "date": "2026-02-23",
