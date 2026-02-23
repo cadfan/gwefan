@@ -5,7 +5,7 @@ description: "From cloud dependency to self-hosted single ingress — how per-de
 tags: ["islet", "architecture", "independence"]
 ---
 
-<p class="blog-lead">For eight days, islet has been the real ingestion path. Tonight it became the only one. Nightscout polling is off. Both phones POST directly to a Raspberry Pi in the next room, and the system does not care.</p>
+<p class="blog-lead">For eight days, islet has been the primary ingestion path. Tonight it became the only one. Nightscout polling is off. Both phones POST directly to a Raspberry Pi in the next room, and the system does not care.</p>
 
 That sounds undramatic because it should be. The entire point of the last three weeks was to make this moment boring.
 
@@ -13,7 +13,7 @@ That sounds undramatic because it should be. The entire point of the last three 
 
 Nightscout was never just a database. It was the implicit trust boundary for every data flow in the system. Sensor readings went from phone to Nightscout to islet. Treatments went the same path. Every piece of data arrived through someone else's API, on someone else's schedule.
 
-The problem with invisible dependencies is that you only notice them when they break at 3am and you are staring at stale CGM data wondering which layer stopped.
+The problem with invisible dependencies is that you only notice them when they break at 3am and the data stops.
 
 ## Why two phones made it harder
 
@@ -21,7 +21,7 @@ Both phones run xDrip4iOS forks. They send identical payloads. Same `device: "xD
 
 That matters because the two phones serve different roles. One phone's CGM data needs to reach Nightscout (so the other apps that still depend on it can see readings). The other phone's data should stay local — islet is its Nightscout replacement.
 
-The solution was per-device API tokens. Each phone gets a different secret. islet maps token to device label at authentication time, then uses that label for routing decisions. Zero changes needed on either phone — xDrip4iOS already has a configurable API secret field.
+The solution was per-device API tokens. Each phone gets a different secret. islet maps token to device label at authentication time, then uses that label for routing decisions. No application changes were required on either phone — xDrip4iOS already supports configurable API secrets.
 
 <blockquote class="blog-pullquote">The best migration strategy requires zero changes from the things being migrated.</blockquote>
 
@@ -30,11 +30,11 @@ The solution was per-device API tokens. Each phone gets a different secret. isle
 The routing rule is simple: check the device label, check the skip list, decide whether to relay.
 
 For CGM entries:
-- phone identified as "xs" — store locally, relay to Nightscout
-- phone identified as "zukka" — store locally, do not relay
+- phone identified as "xs": store locally, relay to Nightscout
+- phone identified as "zukka": store locally, do not relay
 
 For treatments (insulin, carbs):
-- always relay, regardless of source — both phones need to see each other's treatments
+- always relay, regardless of source: both phones need to see each other's treatments
 
 This asymmetry is the whole point. One phone is migrated, one is not. The system handles both without either phone knowing about the other's existence.
 
@@ -56,7 +56,7 @@ The boring cutover was not an accident. It came from specific decisions made wee
 
 1. **Local-first storage** — every record is stored locally before any relay attempt. Relay failure never means data loss.
 
-2. **Idempotent inserts** — INSERT OR IGNORE on deterministic IDs. Duplicate uploads are silently absorbed. During the transition period, both polling and direct upload were active simultaneously with zero conflicts.
+2. **Idempotent inserts** — INSERT OR IGNORE on deterministic IDs. Duplicate uploads are silently absorbed. During the transition period, polling and direct upload were active simultaneously with no conflicts.
 
 3. **Three ingest modes** — `nightscout` (poll only), `dual` (poll and accept uploads), `api` (uploads only). The migration path was: nightscout, then dual, then api, with each step independently reversible.
 
@@ -70,7 +70,7 @@ The architecture is simpler:
 
 Libre 3 sensor, then phone, then islet API, then SQLite.
 
-No intermediate cloud service in the read path. No polling. No dependency on external uptime for local data continuity.
+No intermediate cloud service in the read path. No polling. No dependency on external uptime for local data continuity in the primary path.
 
 Nightscout is still running — it receives relayed data from one phone and serves it to apps that still expect it there. But it is now optional infrastructure, not a critical dependency. If it goes down, islet continues storing data from both phones without interruption.
 
@@ -78,6 +78,6 @@ Nightscout is still running — it receives relayed data from one phone and serv
 
 The remaining Nightscout dependency is the relay itself. Once the second phone no longer needs Nightscout for display, the relay can be turned off and Nightscout can be decommissioned entirely.
 
-That is Phase 4 territory — replacing the phone app's dependency on Nightscout with direct islet API consumption. But that is a client-side change, not a server-side one. The server side is done.
+That is Phase 4 territory — replacing the phone app's dependency on Nightscout with direct islet API consumption. But that is a client-side change, not a server-side one. The server-side ingestion path is complete.
 
 <p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions.</p>
