@@ -3,11 +3,16 @@
   "test_sloc": 6132,
   "test_count": 587,
   "doc_lines": 4991,
-  "total_commits": 62,
+  "total_commits": 63,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "316faca",
+      "message": "Add GOALS.yaml with 12 forward-looking fitness goals"
+    },
     {
       "date": "2026-02-23",
       "hash": "a3c4bf1",
@@ -102,11 +107,6 @@
       "date": "2026-02-20",
       "hash": "a95b713",
       "message": "Replace string-matching with typed CircuitBreakerOpenError exception"
-    },
-    {
-      "date": "2026-02-20",
-      "hash": "ff2a626",
-      "message": "Add relay circuit breaker: open after 5 failures, probe after 60s"
     }
   ]
 }
