@@ -1,13 +1,18 @@
 {
-  "sloc": 5638,
-  "test_sloc": 6132,
-  "test_count": 587,
-  "doc_lines": 4991,
-  "total_commits": 64,
+  "sloc": 5739,
+  "test_sloc": 6414,
+  "test_count": 621,
+  "doc_lines": 5032,
+  "total_commits": 65,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "1d49bc2",
+      "message": "Add per-device token auth and conditional relay routing"
+    },
     {
       "date": "2026-02-23",
       "hash": "19f043c",
@@ -102,11 +107,6 @@
       "date": "2026-02-21",
       "hash": "c01042d",
       "message": "Cache SHA-1 api-secret hash at init instead of recomputing per request"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "47135ab",
-      "message": "Standardize API error format, consolidate relay config, shared test fixture"
     }
   ]
 }
