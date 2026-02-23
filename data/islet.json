@@ -1,13 +1,18 @@
 {
-  "sloc": 5739,
+  "sloc": 5743,
   "test_sloc": 6414,
   "test_count": 621,
   "doc_lines": 5032,
-  "total_commits": 65,
+  "total_commits": 66,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "3.3 soak — Zukka connected, API-only soak in progress",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "cad39a8",
+      "message": "Fix ruff import ordering regression in app.py"
+    },
     {
       "date": "2026-02-23",
       "hash": "1d49bc2",
@@ -102,11 +107,6 @@
       "date": "2026-02-21",
       "hash": "9b51a95",
       "message": "Fix post-mortem findings: complete fixture migration, add _relay_client default"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "c01042d",
-      "message": "Cache SHA-1 api-secret hash at init instead of recomputing per request"
     }
   ]
 }
