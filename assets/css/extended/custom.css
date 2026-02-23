@@ -202,6 +202,103 @@ hr {
 
 /* ── Blog post enhancements ── */
 
+/* Post header — description and metadata */
+.post-description {
+  color: var(--secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.post-meta {
+  margin-top: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+/* Section headings — accent marker */
+.post-content h2 {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+  margin-top: 2.5rem;
+}
+
+/* Ordered lists — amber counters */
+.post-content ol {
+  list-style: none;
+  counter-reset: post-ol;
+  padding-inline-start: 0;
+}
+
+.post-content ol > li {
+  counter-increment: post-ol;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.post-content ol > li::before {
+  content: counter(post-ol) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 0.9em;
+}
+
+/* Unordered lists — amber dash markers */
+.post-content ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.post-content ul > li {
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.post-content ul > li::before {
+  content: '\2013';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Blog listing — card date treatment */
+.post-entry .entry-header h2 {
+  margin-bottom: 0.15rem;
+}
+
+.post-entry .entry-footer {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--accent);
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0.4rem;
+}
+
+/* Post tags — accent hover */
+.post-tags a {
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.post-tags a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Post navigation — accent treatment */
+.paginav .title {
+  color: var(--accent);
+}
+
+.paginav a:hover {
+  border-color: var(--accent);
+}
+
 /* Lead paragraph — editorial deck */
 .blog-lead {
   font-size: 1.12rem;
