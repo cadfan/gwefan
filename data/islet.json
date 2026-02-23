@@ -2,12 +2,17 @@
   "sloc": 5712,
   "test_sloc": 6414,
   "test_count": 621,
-  "doc_lines": 5044,
-  "total_commits": 67,
+  "doc_lines": 5056,
+  "total_commits": 68,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
-  "status": "3.3 soak — Zukka connected, API-only soak in progress",
+  "status": "3.3 cutover — API-only ingest mode live",
   "commits": [
+    {
+      "date": "2026-02-23",
+      "hash": "428d898",
+      "message": "Phase 3.3 cutover: API-only ingest mode live, Nightscout polling disabled"
+    },
     {
       "date": "2026-02-23",
       "hash": "e127041",
@@ -102,11 +107,6 @@
       "date": "2026-02-21",
       "hash": "df05b19",
       "message": "Add relay timeout and mixed-batch test scenarios"
-    },
-    {
-      "date": "2026-02-21",
-      "hash": "10cd4d0",
-      "message": "Add received count to ingest API responses for duplicate detection"
     }
   ]
 }
