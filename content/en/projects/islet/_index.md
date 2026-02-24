@@ -12,6 +12,11 @@ cover:
 
 {{< islet-intro >}}
 
+<a href="/projects/islet/direction/" class="direction-link">
+  <div class="direction-link-title">Direction</div>
+  <div class="direction-link-desc">Where islet and glucore are going: from recording to understanding</div>
+</a>
+
 ---
 
 ## Architecture
@@ -27,11 +32,6 @@ The system runs 24/7 on a Raspberry Pi 5B as a systemd service. All primary data
 The project followed a specification-first approach — every design decision was documented before implementation began.
 
 {{< islet-timeline >}}
-
-<a href="/projects/islet/direction/" class="direction-link">
-  <div class="direction-link-title">Direction</div>
-  <div class="direction-link-desc">Where islet and glucore are going: from recording to understanding</div>
-</a>
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "From daemon to device: islet at 86 commits"
 date: 2026-02-24
-description: "Nine days from polling script to self-hosted platform — what the project looks like now and what having a client changes."
+description: "Three weeks from polling script to self-hosted platform — what the project looks like now and what having a client changes."
 tags: ["islet", "milestones", "architecture"]
 ---
 
-<p class="blog-lead">On February 15th, islet was a Python script that polled Nightscout every 60 seconds and stored the results in SQLite. Nine days and 86 commits later, it runs as a self-hosted platform: its own ingest API, analytics engine, relay system, and a native iOS app on my phone. Nightscout polling is off. The only remaining dependency is a relay for the second phone.</p>
+<p class="blog-lead">On February 5th, islet was a Python script that polled Nightscout every 60 seconds and stored the results in SQLite. Nineteen days and 86 commits later, it runs as a self-hosted platform: its own ingest API, analytics engine, relay system, and a native iOS app on my phone. Nightscout polling is off. The only remaining dependency is a relay for the second phone.</p>
 
 <p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>
 

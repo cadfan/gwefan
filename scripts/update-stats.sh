@@ -15,20 +15,9 @@ if [ ! -d "$ISLET_REPO" ]; then
   exit 0
 fi
 
-# Python SLOC: non-blank, non-comment lines in islet/**/*.py
-python_sloc=$(find "$ISLET_REPO/islet" -name '*.py' -print0 \
+# Source SLOC: non-blank, non-comment lines in islet/**/*.py
+source_sloc=$(find "$ISLET_REPO/islet" -name '*.py' -print0 \
   | xargs -0 grep -v '^\s*$' | grep -v '^\s*#' | wc -l)
-
-# Swift SLOC: non-blank, non-comment lines in ios/**/*.swift (if present)
-if [ -d "$ISLET_REPO/ios" ]; then
-  swift_sloc=$(find "$ISLET_REPO/ios" -name '*.swift' -not -path '*/isletTests/*' -print0 \
-    | xargs -0 grep -v '^\s*$' | grep -v '^\s*//' | wc -l)
-else
-  swift_sloc=0
-fi
-
-# Combined source SLOC
-source_sloc=$((python_sloc + swift_sloc))
 
 # Test SLOC: non-blank, non-comment lines in tests/**/*.py
 test_sloc=$(find "$ISLET_REPO/tests" -name '*.py' -print0 \
@@ -47,12 +36,12 @@ total_commits=$(git -C "$ISLET_REPO" rev-list --count HEAD)
 progress_phase=$(grep -m1 '^\*\*Phase:\*\*' "$ISLET_REPO/PROGRESS_REPORT.md" 2>/dev/null \
   | sed 's/\*\*Phase:\*\* //')
 if [ -n "$progress_phase" ]; then
-  status="$progress_phase"
+  status="Phase $progress_phase"
 else
   status="In development"
 fi
 
-# All commits — use tab separator then build JSON safely
+# Recent commits (last 20) — use tab separator then build JSON safely
 commits_json="["
 first=true
 while IFS=$'\t' read -r cdate chash cmsg; do
@@ -64,15 +53,13 @@ while IFS=$'\t' read -r cdate chash cmsg; do
     commits_json+=","
   fi
   commits_json+="{\"date\":\"${cdate}\",\"hash\":\"${chash}\",\"message\":\"${cmsg}\"}"
-done < <(git -C "$ISLET_REPO" log --format="%ad%x09%h%x09%s" --date=short)
+done < <(git -C "$ISLET_REPO" log -20 --format="%ad%x09%h%x09%s" --date=short)
 commits_json+="]"
 
 # Write JSON
 cat > "$OUTFILE" <<ENDJSON
 {
   "sloc": ${source_sloc},
-  "python_sloc": ${python_sloc},
-  "swift_sloc": ${swift_sloc},
   "test_sloc": ${test_sloc},
   "test_count": ${test_count},
   "doc_lines": ${doc_lines},

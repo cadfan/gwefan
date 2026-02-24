@@ -5,7 +5,7 @@ description: "Why a personal glucose platform needed a native app, and what Swif
 tags: ["islet", "ios", "design"]
 ---
 
-<p class="blog-lead">For nine days, islet has lived in a terminal. The daemon runs on a Raspberry Pi, the analytics engine crunches numbers in the background, the API accepts uploads &mdash; all invisible unless you know the right curl command. Logging a meal meant SSH and a CLI. That works at a desk. It does not work holding a fork.</p>
+<p class="blog-lead">For three weeks, islet has lived in a terminal. The daemon runs on a Raspberry Pi, the analytics engine crunches numbers in the background, the API accepts uploads &mdash; all invisible unless you know the right curl command. Logging a meal meant SSH and a CLI. That works at a desk. It does not work holding a fork.</p>
 
 <p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>
 
