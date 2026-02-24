@@ -1,5 +1,7 @@
 {
-  "sloc": 5823,
+  "sloc": 7514,
+  "python_sloc": 5823,
+  "swift_sloc": 1691,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3193,
