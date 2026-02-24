@@ -440,6 +440,34 @@ hr {
   margin-top: 0.2rem;
 }
 
+/* Colour palette swatches */
+.colour-palette {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1rem 0 1.5rem;
+  flex-wrap: wrap;
+}
+.colour-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+.colour-swatch-block {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--primary, #fff) 12%, transparent);
+}
+.colour-swatch-label {
+  font-size: 0.62rem;
+  color: var(--secondary, #888);
+  text-align: center;
+  max-width: 4.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
 /* Post note / disclaimer */
 .post-note {
   font-size: 0.82rem;
