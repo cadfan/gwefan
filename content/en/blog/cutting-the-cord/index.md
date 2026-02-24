@@ -7,7 +7,7 @@ tags: ["islet", "architecture", "independence"]
 
 <p class="blog-lead">For eight days, islet has been the primary ingestion path. Tonight it became the only one. Nightscout polling is off. Both phones POST directly to a Raspberry Pi in the next room, and the system does not care.</p>
 
-That sounds undramatic because it should be. The entire point of the last three weeks was to make this moment boring.
+That sounds undramatic because it should be. The entire point of the last eight days was to make this moment boring.
 
 ## The dependency that was hard to see
 
@@ -52,7 +52,7 @@ Both phones kept posting. Relay kept forwarding. No data gap. No reconfiguration
 
 ## What made it boring
 
-The boring cutover was not an accident. It came from specific decisions made weeks earlier:
+The boring cutover was not an accident. It came from specific decisions made days earlier:
 
 1. **Local-first storage** — every record is stored locally before any relay attempt. Relay failure never means data loss.
 
