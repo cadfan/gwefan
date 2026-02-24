@@ -1,13 +1,18 @@
 {
-  "sloc": 5800,
+  "sloc": 5823,
   "test_sloc": 6414,
   "test_count": 621,
   "doc_lines": 3152,
-  "total_commits": 81,
+  "total_commits": 82,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "iOS app — food logging + Warm Amber theme",
   "commits": [
+    {
+      "date": "2026-02-24",
+      "hash": "8d71ab6",
+      "message": "Fix food logger: stateless estimate API, multi-turn chat, delete guards"
+    },
     {
       "date": "2026-02-24",
       "hash": "163aad0",
@@ -102,11 +107,6 @@
       "date": "2026-02-23",
       "hash": "316faca",
       "message": "Add GOALS.yaml with 12 forward-looking fitness goals"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "a3c4bf1",
-      "message": "Post-mortem RPI: module-level imports, narrow except, deploy script"
     }
   ]
 }
