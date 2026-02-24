@@ -1,6 +1,6 @@
 ---
 title: "Warm Amber: an iOS companion for islet"
-date: 2026-02-24
+date: 2026-02-24T00:01:00+00:00
 description: "Why a personal glucose platform needed a native app, and what SwiftUI, XcodeGen and a shared design language look like when you're building for one."
 tags: ["islet", "ios", "design"]
 ---
