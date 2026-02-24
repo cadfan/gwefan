@@ -111,12 +111,12 @@
 <div class="islet-stats">
   {{- if $data }}
   <div class="islet-stat">
-    <div class="islet-stat-value">{{ $data.language }}</div>
-    <div class="islet-stat-label">Language</div>
+    <div class="islet-stat-value">~{{ $data.python_sloc | lang.FormatNumber 0 }}</div>
+    <div class="islet-stat-label">Python SLOC</div>
   </div>
   <div class="islet-stat">
-    <div class="islet-stat-value">~{{ $data.sloc | lang.FormatNumber 0 }}</div>
-    <div class="islet-stat-label">Source lines</div>
+    <div class="islet-stat-value">~{{ $data.swift_sloc | lang.FormatNumber 0 }}</div>
+    <div class="islet-stat-label">Swift SLOC</div>
   </div>
   <div class="islet-stat">
     <div class="islet-stat-value">{{ $data.test_count | lang.FormatNumber 0 }} passing</div>

@@ -177,22 +177,41 @@
     <div class="tl-desc">Fire-and-forget relay to upstream Nightscout for redundancy. Circuit breaker with automatic recovery. Self-relay guard prevents infinite loops.</div>
   </li>
 
-  <li class="tl-item" data-status="current">
+  <li class="tl-item" data-status="complete">
     <span class="tl-dot"></span>
     <div class="tl-header">
-      <span class="tl-phase">Phase 3.3 — API-Only Soak</span>
-      <span class="tl-badge">In Progress</span>
+      <span class="tl-phase">Phase 3.3 — API-Only Cutover</span>
+      <span class="tl-badge">Complete</span>
     </div>
-    <div class="tl-desc">Zukka on iPhone 12 Pro posting directly to islet. Soak test verifying stability before full cutover to API-only ingest mode and Nightscout polling retirement.</div>
+    <div class="tl-desc">Nightscout polling disabled. Both phones posting directly to islet API. Three commands, no data gap. Nightscout now receives relayed data only — optional infrastructure, not a dependency.</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 4.0 — iOS Companion App</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">Native SwiftUI app with glucose dashboard, AI-assisted food logging, meal history, and Warm Amber theme. Built with XcodeGen, async/await actors, stateless estimation API.</div>
+    <div class="tl-stat">4 screens &middot; 1,608 Swift SLOC</div>
   </li>
 
   <li class="tl-item" data-status="planned">
     <span class="tl-dot"></span>
     <div class="tl-header">
-      <span class="tl-phase">Phase 4 — Direct BLE Ingestion</span>
+      <span class="tl-phase">Phase 4.1 — Direct BLE Ingestion</span>
       <span class="tl-badge">Planned</span>
     </div>
-    <div class="tl-desc">Direct Libre 3 BLE sensor communication from an iPhone islet app, replacing Zukka. Sensor lifecycle handling, background reliability and recovery. Highest technical risk stage.</div>
+    <div class="tl-desc">Direct Libre 3 BLE sensor communication from the iOS app, replacing the xDrip4iOS dependency. Sensor lifecycle handling, background reliability and recovery.</div>
+  </li>
+
+  <li class="tl-item" data-status="planned">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 4.2 — Android</span>
+      <span class="tl-badge">Future</span>
+    </div>
+    <div class="tl-desc">Android companion app. Scope TBD based on device usage.</div>
   </li>
 
 </ol>

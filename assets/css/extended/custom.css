@@ -419,25 +419,50 @@ hr {
   text-decoration: none;
   color: inherit;
   padding: 1rem 1.25rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
   border-left: 3px solid var(--accent);
   border-radius: 0 6px 6px 0;
   margin: 1.5rem 0;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .direction-link:hover {
   border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 5%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.dark .direction-link:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 .direction-link-title {
   font-weight: 600;
   font-size: 1rem;
   color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.direction-link-title::after {
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-right: 2px solid var(--accent);
+  border-top: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.direction-link:hover .direction-link-title::after {
+  transform: rotate(45deg) translate(2px, -2px);
 }
 .direction-link-desc {
   font-size: 0.85rem;
   color: var(--secondary);
   margin-top: 0.2rem;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 25%, transparent);
+  text-underline-offset: 3px;
 }
 
 /* Colour palette swatches */

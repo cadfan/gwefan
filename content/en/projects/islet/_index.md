@@ -13,7 +13,7 @@ cover:
 {{< islet-intro >}}
 
 <a href="/projects/islet/direction/" class="direction-link">
-  <div class="direction-link-title">Direction &rarr;</div>
+  <div class="direction-link-title">Direction</div>
   <div class="direction-link-desc">Where islet and glucore are going: from recording to understanding</div>
 </a>
 

@@ -2,12 +2,17 @@
   "sloc": 5823,
   "test_sloc": 6742,
   "test_count": 641,
-  "doc_lines": 3161,
-  "total_commits": 86,
+  "doc_lines": 3183,
+  "total_commits": 87,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
-  "status": "iOS app — food logging + Warm Amber theme",
+  "status": "Phase 4.0 — iOS Companion App",
   "commits": [
+    {
+      "date": "2026-02-24",
+      "hash": "aae2f4a",
+      "message": "Promote iOS to Phase 4.0, restructure phase numbering"
+    },
     {
       "date": "2026-02-24",
       "hash": "26ed032",
@@ -102,11 +107,6 @@
       "date": "2026-02-23",
       "hash": "428d898",
       "message": "Phase 3.3 cutover: API-only ingest mode live, Nightscout polling disabled"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "e127041",
-      "message": "Post-mortem RPI: fix API logging, remove dead code, add device observability"
     }
   ]
 }

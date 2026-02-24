@@ -2,8 +2,8 @@
 {{- if $data -}}
 <table>
   <tbody>
-    <tr><td><strong>Language</strong></td><td>{{ $data.language }}</td></tr>
-    <tr><td><strong>Implementation</strong></td><td>~{{ $data.sloc | lang.FormatNumber 0 }} SLOC (source lines of code)</td></tr>
+    <tr><td><strong>Python</strong></td><td>~{{ $data.python_sloc | lang.FormatNumber 0 }} SLOC</td></tr>
+    <tr><td><strong>Swift (iOS)</strong></td><td>~{{ $data.swift_sloc | lang.FormatNumber 0 }} SLOC</td></tr>
     <tr><td><strong>Tests</strong></td><td>{{ $data.test_count | lang.FormatNumber 0 }} passing (~{{ $data.test_sloc | lang.FormatNumber 0 }} SLOC)</td></tr>
     <tr><td><strong>Documentation</strong></td><td>~{{ $data.doc_lines | lang.FormatNumber 0 }} lines</td></tr>
     <tr><td><strong>Runtime</strong></td><td>{{ $data.runtime }}</td></tr>
