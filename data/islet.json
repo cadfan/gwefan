@@ -2,12 +2,17 @@
   "sloc": 5823,
   "test_sloc": 6414,
   "test_count": 621,
-  "doc_lines": 3152,
-  "total_commits": 84,
+  "doc_lines": 3151,
+  "total_commits": 85,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "iOS app — food logging + Warm Amber theme",
   "commits": [
+    {
+      "date": "2026-02-24",
+      "hash": "b68b3c1",
+      "message": "Fix ios-meal-list goal check, update docs for Phase 3.3 completion"
+    },
     {
       "date": "2026-02-24",
       "hash": "f68c27f",
@@ -102,11 +107,6 @@
       "date": "2026-02-23",
       "hash": "cad39a8",
       "message": "Fix ruff import ordering regression in app.py"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "1d49bc2",
-      "message": "Add per-device token auth and conditional relay routing"
     }
   ]
 }
