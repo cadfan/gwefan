@@ -59,10 +59,10 @@ particularly in health data, simulation tooling and self-hosted infrastructure.
 
 ### Areas of interest
 
-— Sim racing tooling and telemetry workflows  \n\
-— Local-first health data and glucose modelling  \n\
-— Self-hosted systems and infrastructure  \n\
-— Welsh language and technology"""
+<span class="hi-list-item">Sim racing tooling and telemetry workflows</span>\n\
+<span class="hi-list-item">Local-first health data and glucose modelling</span>\n\
+<span class="hi-list-item">Self-hosted systems and infrastructure</span>\n\
+<span class="hi-list-item">Welsh language and technology</span>"""
 
   [[params.socialIcons]]
     name = 'github'

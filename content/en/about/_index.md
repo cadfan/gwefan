@@ -3,8 +3,6 @@ title: "About"
 description: "About Christopher Griffiths"
 ---
 
-## About
-
 I am an independent builder based in Wales. My work focuses on practical, real-world software systems rather than polished products or commercial platforms.
 
 I am particularly interested in systems that must remain reliable under imperfect conditions, including missing data, hardware limits and operational failure. Much of my work is iterative and long-term, prioritising correctness, auditability and local control over convenience.
