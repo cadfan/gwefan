@@ -7,13 +7,13 @@ tags: ["islet", "ios", "design"]
 
 <p class="blog-lead">For three weeks, islet has lived in a terminal. The daemon runs on a Raspberry Pi, the analytics engine crunches numbers in the background, the API accepts uploads &mdash; all invisible unless you know the right curl command. Logging a meal meant SSH and a CLI. That works at a desk. It does not work holding a fork.</p>
 
-The server already supported meal logging. Phase 1.5 added a full food logging API with AI-assisted carb estimation, session management, and meal lifecycle. The technical capability existed. What didn't exist was a way to use it without putting your dinner down and opening a terminal.
+<p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>
+
+The server already supported meal logging &mdash; a food logging API (introduced in Phase 1.5) with AI-assisted carb estimation via a configurable provider, session management, and meal lifecycle. The technical capability existed. What was missing was a way to use it without a terminal.
 
 ## Why native
 
-A web app was the obvious choice. It would run anywhere, require no App Store, and share the existing CSS from this site.
-
-But meal logging has a specific interaction pattern: you're eating, you pull out your phone, you type what you're eating, you put the phone down. The whole thing needs to take less than a minute. It needs to work with one hand.
+A web app was the obvious choice. But meal logging has a specific interaction pattern: you're eating, you pull out your phone, you type what you're eating, you put the phone down. The whole thing needs to take less than a minute. It needs to work with one hand.
 
 Native SwiftUI gets you the keyboard behaviour, the scroll physics, the date picker, and the system navigation for free. A web app would need to fight for all of those.
 
@@ -119,5 +119,3 @@ islet has exactly one user. There is no onboarding flow, no account creation, no
 That changes every design decision. There's no need for error messages that explain the system to a stranger. No need for a forgot-password flow. No need for feature discovery. The app opens, shows the data, logs the food, and gets out of the way.
 
 Every feature either solves a daily problem or it doesn't exist.
-
-<p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>
