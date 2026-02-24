@@ -1,13 +1,18 @@
 {
   "sloc": 5823,
-  "test_sloc": 6414,
-  "test_count": 621,
-  "doc_lines": 3151,
-  "total_commits": 85,
+  "test_sloc": 6742,
+  "test_count": 641,
+  "doc_lines": 3161,
+  "total_commits": 86,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "iOS app — food logging + Warm Amber theme",
   "commits": [
+    {
+      "date": "2026-02-24",
+      "hash": "26ed032",
+      "message": "Add test coverage for /api/v1/meal/estimate endpoint"
+    },
     {
       "date": "2026-02-24",
       "hash": "b68b3c1",
@@ -102,11 +107,6 @@
       "date": "2026-02-23",
       "hash": "e127041",
       "message": "Post-mortem RPI: fix API logging, remove dead code, add device observability"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "cad39a8",
-      "message": "Fix ruff import ordering regression in app.py"
     }
   ]
 }
