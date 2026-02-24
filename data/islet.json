@@ -3,11 +3,16 @@
   "test_sloc": 6414,
   "test_count": 621,
   "doc_lines": 3152,
-  "total_commits": 83,
+  "total_commits": 84,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "iOS app — food logging + Warm Amber theme",
   "commits": [
+    {
+      "date": "2026-02-24",
+      "hash": "f68c27f",
+      "message": "Show bearer token in plain text in settings"
+    },
     {
       "date": "2026-02-24",
       "hash": "b11b4f0",
@@ -102,11 +107,6 @@
       "date": "2026-02-23",
       "hash": "1d49bc2",
       "message": "Add per-device token auth and conditional relay routing"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "19f043c",
-      "message": "Add ruff linter, pyright type checking, and GitHub Actions CI"
     }
   ]
 }
