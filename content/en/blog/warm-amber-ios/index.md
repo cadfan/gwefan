@@ -26,7 +26,7 @@ Four screens. No onboarding.
 <div class="spec-grid spec-grid-2col">
   <div class="spec-card">
     <div class="spec-card-title">Dashboard</div>
-    <div class="spec-card-desc">Current glucose reading colour-coded by range, insulin on board, carbs on board, 30-minute prediction, server connection status.</div>
+    <div class="spec-card-desc">Current glucose reading colour-coded by range, insulin on board, carbs on board, 30-minute prediction, data freshness.</div>
   </div>
   <div class="spec-card">
     <div class="spec-card-title">Food logger</div>
@@ -44,7 +44,7 @@ Four screens. No onboarding.
 
 The AI estimation is the most interesting part. You describe what you're eating &mdash; "two slices of sourdough with butter and a fried egg" &mdash; and the model either estimates directly or asks follow-up questions. The conversation is multi-turn: it might ask about portion size or cooking method before committing to a number. When it does estimate, the form auto-fills with carbs, GI level, and absorption speed. You review, adjust if needed, and submit.
 
-The API behind this is stateless. The client sends the full conversation history on every request. The server holds no session state. That means the server can restart between turns without breaking a conversation, and there's nothing to expire or clean up.
+The estimation API behind this is stateless. The client sends the full conversation history on every request; the server holds no session state for the AI conversation. That means the server can restart between turns without breaking a conversation, and there's nothing to expire or clean up.
 
 ## The Warm Amber theme
 
@@ -108,7 +108,7 @@ What was not straightforward: making Swift's Codable decoders match the actual A
 
 <div class="blog-stat-row">
   <div class="blog-stat"><div class="blog-stat-num">4</div><div class="blog-stat-label">screens</div></div>
-  <div class="blog-stat"><div class="blog-stat-num">~1,600</div><div class="blog-stat-label">Swift SLOC</div></div>
+  <div class="blog-stat"><div class="blog-stat-num">1,608</div><div class="blog-stat-label">Swift SLOC</div></div>
   <div class="blog-stat"><div class="blog-stat-num">1</div><div class="blog-stat-label">user</div></div>
 </div>
 
@@ -120,4 +120,4 @@ That changes every design decision. There's no need for error messages that expl
 
 Every feature either solves a daily problem or it doesn't exist.
 
-<p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions.</p>
+<p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>

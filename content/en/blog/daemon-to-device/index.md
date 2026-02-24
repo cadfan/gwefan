@@ -1,11 +1,11 @@
 ---
 title: "From daemon to device: islet at 86 commits"
-date: 2026-02-23
+date: 2026-02-24
 description: "Three weeks from polling script to standalone platform — what the project looks like now and what having a client changes."
 tags: ["islet", "milestones", "architecture"]
 ---
 
-<p class="blog-lead">On February 5th, islet was a Python script that polled Nightscout every 60 seconds and stored the results in SQLite. Nineteen days and 86 commits later, it is a standalone platform: its own ingest API, analytics engine, relay system, and a native iOS app on my phone. The Nightscout dependency is off.</p>
+<p class="blog-lead">On February 5th, islet was a Python script that polled Nightscout every 60 seconds and stored the results in SQLite. Nineteen days and 86 commits later, it is a standalone platform: its own ingest API, analytics engine, relay system, and a native iOS app on my phone. Nightscout polling is off. The only remaining dependency is a relay for the second phone.</p>
 
 That trajectory was not planned as a single arc. Each phase solved the next most important problem, and the specification-first approach meant each phase could be built quickly without rewriting what came before.
 
@@ -36,7 +36,7 @@ Phase 3.3 &mdash; the actual cutover to API-only ingest &mdash; went live on the
 
 <div class="blog-stat-row">
   <div class="blog-stat"><div class="blog-stat-num">5,823</div><div class="blog-stat-label">Python SLOC</div></div>
-  <div class="blog-stat"><div class="blog-stat-num">~1,600</div><div class="blog-stat-label">Swift SLOC</div></div>
+  <div class="blog-stat"><div class="blog-stat-num">1,608</div><div class="blog-stat-label">Swift SLOC</div></div>
   <div class="blog-stat"><div class="blog-stat-num">641</div><div class="blog-stat-label">tests passing</div></div>
   <div class="blog-stat"><div class="blog-stat-num">86</div><div class="blog-stat-label">commits</div></div>
 </div>
@@ -67,4 +67,4 @@ Beyond that: glucose charting in the app, longer-range trend analysis, and the s
 
 The destination was always a self-contained system. Eighty-six commits in, the outline is visible.
 
-<p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions.</p>
+<p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>
