@@ -3,11 +3,16 @@
   "test_sloc": 6414,
   "test_count": 621,
   "doc_lines": 3152,
-  "total_commits": 82,
+  "total_commits": 83,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "iOS app — food logging + Warm Amber theme",
   "commits": [
+    {
+      "date": "2026-02-24",
+      "hash": "b11b4f0",
+      "message": "Add date/time picker to food logger"
+    },
     {
       "date": "2026-02-24",
       "hash": "8d71ab6",
@@ -102,11 +107,6 @@
       "date": "2026-02-23",
       "hash": "19f043c",
       "message": "Add ruff linter, pyright type checking, and GitHub Actions CI"
-    },
-    {
-      "date": "2026-02-23",
-      "hash": "316faca",
-      "message": "Add GOALS.yaml with 12 forward-looking fitness goals"
     }
   ]
 }
