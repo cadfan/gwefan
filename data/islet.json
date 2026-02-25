@@ -1,15 +1,20 @@
 {
-  "sloc": 8430,
-  "python_sloc": 5823,
+  "sloc": 8496,
+  "python_sloc": 5889,
   "swift_sloc": 2607,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 89,
+  "total_commits": 90,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "65fc552",
+      "message": "Redesign web UI to match iOS warm clinical aesthetic"
+    },
     {
       "date": "2026-02-25",
       "hash": "ee73670",
