@@ -1,15 +1,20 @@
 {
-  "sloc": 9328,
+  "sloc": 9426,
   "python_sloc": 6075,
-  "swift_sloc": 3253,
-  "test_sloc": 6742,
-  "test_count": 641,
+  "swift_sloc": 3351,
+  "test_sloc": 6824,
+  "test_count": 651,
   "doc_lines": 3200,
-  "total_commits": 99,
+  "total_commits": 100,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "7d64173",
+      "message": "Add treatment CRUD tests and expand Swift model tests"
+    },
     {
       "date": "2026-02-25",
       "hash": "3ed5d01",
