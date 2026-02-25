@@ -1,15 +1,20 @@
 {
-  "sloc": 8409,
-  "python_sloc": 5886,
-  "swift_sloc": 2523,
+  "sloc": 9013,
+  "python_sloc": 6005,
+  "swift_sloc": 3008,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 92,
+  "total_commits": 93,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "229851b",
+      "message": "Add treatment logger to iOS app and web UI"
+    },
     {
       "date": "2026-02-25",
       "hash": "67224c8",
