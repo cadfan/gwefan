@@ -5,11 +5,16 @@
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 96,
+  "total_commits": 97,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "73ddef3",
+      "message": "Add treatment edit, meal edit, and timeline action goals"
+    },
     {
       "date": "2026-02-25",
       "hash": "c2c17b8",
