@@ -1,15 +1,20 @@
 {
-  "sloc": 9020,
+  "sloc": 9044,
   "python_sloc": 6012,
-  "swift_sloc": 3008,
+  "swift_sloc": 3032,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 94,
+  "total_commits": 95,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "037a2b4",
+      "message": "Add smart polling to iOS dashboard using next_expected_ms"
+    },
     {
       "date": "2026-02-25",
       "hash": "2b521e0",
