@@ -1,15 +1,20 @@
 {
-  "sloc": 9013,
-  "python_sloc": 6005,
+  "sloc": 9020,
+  "python_sloc": 6012,
   "swift_sloc": 3008,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 93,
+  "total_commits": 94,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "2b521e0",
+      "message": "Add next_expected_ms to glucore/status for smart client polling"
+    },
     {
       "date": "2026-02-25",
       "hash": "229851b",
