@@ -9,7 +9,7 @@ tags: ["islet", "ios", "design"]
 
 <p class="post-note"><strong>Safety note:</strong> islet is a personal project and is not medical advice. It does not make dosing decisions. PCU values are informational only and must not be used as dosing advice.</p>
 
-The server already supported meal logging &mdash; a food logging API (introduced in Phase 1.5) with AI-assisted carb estimation via a configurable provider, session management, and meal lifecycle. The technical capability existed. What was missing was a way to use it without a terminal.
+The server already supported meal logging &mdash; a food logging API (introduced in Phase 1.5) with AI-assisted carb estimation via the server estimation API and a configurable provider, session management, and meal lifecycle. The capability existed, but only through a terminal.
 
 ## Why native
 
@@ -17,7 +17,7 @@ A web app was the obvious choice. But meal logging has a specific interaction pa
 
 Native SwiftUI gets you the keyboard behaviour, the scroll physics, the date picker, and the system navigation for free. A web app would need to fight for all of those.
 
-<blockquote class="blog-pullquote">The best client for a system of one is the one that gets out of the way fastest.</blockquote>
+<blockquote class="blog-pullquote">Fastest client wins for a system of one.</blockquote>
 
 ## What the app does
 
@@ -26,7 +26,7 @@ Four screens. No onboarding.
 <div class="spec-grid spec-grid-2col">
   <div class="spec-card">
     <div class="spec-card-title">Dashboard</div>
-    <div class="spec-card-desc">Current glucose reading colour-coded by range, insulin on board, carbs on board, 30-minute prediction, data freshness.</div>
+    <div class="spec-card-desc">Current glucose reading colour-coded by range, insulin on board, carbs on board, model-based 30-minute prediction, data freshness.</div>
   </div>
   <div class="spec-card">
     <div class="spec-card-title">Food logger</div>
@@ -34,7 +34,7 @@ Four screens. No onboarding.
   </div>
   <div class="spec-card">
     <div class="spec-card-title">Meal history</div>
-    <div class="spec-card-desc">Recent meals with status badges. Swipe to delete unconfirmed entries.</div>
+    <div class="spec-card-desc">Recent meals with status badges. Delete unconfirmed entries.</div>
   </div>
   <div class="spec-card">
     <div class="spec-card-title">Settings</div>

@@ -48,13 +48,13 @@ The tag pickers collapsed from five stacked rows into a 2&times;2 grid of colour
 
 ## One screen
 
-The biggest structural change: the dashboard, food logger, and meal timeline are no longer separate screens. They're zones on one scrollable page, separated by thin dividers and uppercase zone labels.
+The biggest structural change is in the core flow: the dashboard, food logger, and today's meal timeline now live on one scrollable page instead of separate primary screens. Settings and full meal history still exist as separate destinations, but the everyday logging path stays in one place.
 
 From top to bottom: the glucose reading (large serif number, range-coloured, with direction arrow and age). A compact metrics bar showing IOB, COB, and 30-minute prediction. A divider. The food input zone. Another divider. Today's meal timeline. A disclaimer at the bottom.
 
 <blockquote class="blog-pullquote">The question shifted from "where do I go to log food" to "I'm already there."</blockquote>
 
-No navigation. No sheet presentations for the common case. You scroll down, type what you ate, tap a button. The AI estimation opens as a sheet only when needed &mdash; it's the one interaction complex enough to warrant its own context.
+Far less navigation in the common case. No extra sheet presentations for routine logging. You scroll down, type what you ate, tap a button. The AI estimation opens as a sheet only when needed &mdash; it's the one interaction complex enough to warrant its own context.
 
 ## AI first, manual fallback
 
@@ -88,6 +88,7 @@ The iOS app and the web app now share a design language without sharing any code
 
 The data model didn't change. The API didn't change. The same endpoints serve the same JSON to the same clients. Every change was in the presentation layer &mdash; how the data is arranged on screen, how interactions flow, and how colour carries meaning.
 
-The app went from four screens to one. The tag pickers went from five identical rows to a colour-coded grid behind a toggle. The meal list went from a flat table to a timeline. The AI estimation went from a hidden option to the primary action.
+The app moved from four competing screens to one primary logging surface. The tag pickers went from five identical rows to a colour-coded grid behind a toggle. The meal list moved from a flat table to a timeline, while full history remains available on its own page. The AI estimation went from a hidden option to the primary action.
 
 It still logs food. It just gets out of the way faster.
+
