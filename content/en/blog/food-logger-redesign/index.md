@@ -50,6 +50,8 @@ The tag pickers collapsed from five stacked rows into a 2&times;2 grid of colour
 
 The biggest structural change is in the core flow: the dashboard, food logger, and today's meal timeline now live on one scrollable page instead of separate primary screens. Settings and full meal history still exist as separate destinations, but the everyday logging path stays in one place.
 
+<img src="screenshot-ios.png" alt="islet unified dashboard on iPhone — CGM reading, metrics bar, food input with category chips, and meal timeline with colour-coded nutritional tags" style="max-width:320px;margin:24px auto;display:block;border-radius:16px;border:1px solid #2a2a30">
+
 From top to bottom: the glucose reading (large serif number, range-coloured, with direction arrow and age). A compact metrics bar showing IOB, COB, and 30-minute prediction. A divider. The food input zone. Another divider. Today's meal timeline. A disclaimer at the bottom.
 
 <blockquote class="blog-pullquote">The question shifted from "where do I go to log food" to "I'm already there."</blockquote>
