@@ -1,15 +1,20 @@
 {
-  "sloc": 9426,
-  "python_sloc": 6075,
-  "swift_sloc": 3351,
-  "test_sloc": 6824,
+  "sloc": 9722,
+  "python_sloc": 6129,
+  "swift_sloc": 3593,
+  "test_sloc": 6825,
   "test_count": 651,
   "doc_lines": 3200,
-  "total_commits": 101,
+  "total_commits": 102,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "5f48c1c",
+      "message": "Add food templates for Tunnock's Caramel Wafer and Penguin"
+    },
     {
       "date": "2026-02-25",
       "hash": "6fce0a8",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "c929c6d",
       "message": "Add Phase 1 hardening: staleness detection and health timer"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "509bf06",
-      "message": "Implement Phase 1: Nightscout â†’ SQLite mirror"
     }
   ]
 }
