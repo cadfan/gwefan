@@ -1,15 +1,20 @@
 {
-  "sloc": 9045,
-  "python_sloc": 6013,
-  "swift_sloc": 3032,
+  "sloc": 9328,
+  "python_sloc": 6075,
+  "swift_sloc": 3253,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 97,
+  "total_commits": 98,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "5ca3eaa",
+      "message": "Add treatment edit/delete and timeline swipe actions"
+    },
     {
       "date": "2026-02-25",
       "hash": "73ddef3",
