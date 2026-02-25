@@ -1,15 +1,20 @@
 {
-  "sloc": 8496,
-  "python_sloc": 5889,
-  "swift_sloc": 2607,
+  "sloc": 8409,
+  "python_sloc": 5886,
+  "swift_sloc": 2523,
   "test_sloc": 6742,
   "test_count": 641,
   "doc_lines": 3200,
-  "total_commits": 90,
+  "total_commits": 91,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "22e9564",
+      "message": "Remove absorption speed tag â€” redundant with GI + fat/protein/fibre"
+    },
     {
       "date": "2026-02-25",
       "hash": "65fc552",
