@@ -1,15 +1,20 @@
 {
-  "sloc": 9722,
-  "python_sloc": 6129,
+  "sloc": 9788,
+  "python_sloc": 6195,
   "swift_sloc": 3593,
   "test_sloc": 6825,
   "test_count": 651,
   "doc_lines": 3200,
-  "total_commits": 103,
+  "total_commits": 104,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-25",
+      "hash": "334c3ce",
+      "message": "Add edit/delete buttons to web UI timeline"
+    },
     {
       "date": "2026-02-25",
       "hash": "ff33157",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "589a496",
       "message": "Redact Nightscout token from error messages in daemon logs and status"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "b7232eb",
-      "message": "Add project documentation: hardening spec, progress report, contributor call"
     }
   ]
 }
