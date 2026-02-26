@@ -1,15 +1,20 @@
 {
-  "sloc": 10017,
-  "python_sloc": 6424,
+  "sloc": 10022,
+  "python_sloc": 6429,
   "swift_sloc": 3593,
   "test_sloc": 6994,
   "test_count": 668,
   "doc_lines": 3240,
-  "total_commits": 106,
+  "total_commits": 107,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-26",
+      "hash": "e5ae280",
+      "message": "Fix ruff import sorting in meal_routes.py"
+    },
     {
       "date": "2026-02-26",
       "hash": "54ad23f",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "488e324",
       "message": "Bump health check threshold from 330s to 420s"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "8ad39a5",
-      "message": "Update progress report: soak test start time, token redaction, commit count"
     }
   ]
 }
