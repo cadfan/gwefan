@@ -4,12 +4,17 @@
   "swift_sloc": 3593,
   "test_sloc": 6994,
   "test_count": 668,
-  "doc_lines": 3200,
-  "total_commits": 105,
+  "doc_lines": 3240,
+  "total_commits": 106,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-26",
+      "hash": "54ad23f",
+      "message": "Update progress report and roadmap for web UI overhaul"
+    },
     {
       "date": "2026-02-26",
       "hash": "3ad0d4c",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "8ad39a5",
       "message": "Update progress report: soak test start time, token redaction, commit count"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "0c86c49",
-      "message": "Redact token at source in Nightscout client connection errors"
     }
   ]
 }
