@@ -39,7 +39,7 @@ contentDir = 'content/en'
   showAuthor = false
   showBreadCrumbs = true
   showPostNavLinks = true
-  defaultTheme = 'auto'
+  defaultTheme = 'dark'
   ShowCodeCopyButtons = true
 
   [params.label]
