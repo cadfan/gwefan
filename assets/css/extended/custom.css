@@ -157,7 +157,7 @@ hr {
 /* ── Project cards ── */
 .post-entry {
   border-radius: 10px;
-  border-left: 3px solid transparent;
+  border-left: 3px solid color-mix(in srgb, var(--accent) 30%, transparent);
   padding: 1rem 1.25rem;
   transition: border-color 0.2s ease,
               transform 0.2s ease,
@@ -165,7 +165,6 @@ hr {
 }
 
 .post-entry:hover {
-  border-color: var(--accent);
   border-left-color: var(--accent);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);

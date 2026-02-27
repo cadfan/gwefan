@@ -1,15 +1,20 @@
 {
-  "sloc": 10022,
+  "sloc": 10110,
   "python_sloc": 6429,
-  "swift_sloc": 3593,
+  "swift_sloc": 3681,
   "test_sloc": 6994,
   "test_count": 668,
-  "doc_lines": 3240,
-  "total_commits": 107,
+  "doc_lines": 3281,
+  "total_commits": 108,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-27",
+      "hash": "38bdbb1",
+      "message": "iOS navigation overhaul: TabView, glucose chart, history page"
+    },
     {
       "date": "2026-02-26",
       "hash": "e5ae280",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "2671f1a",
       "message": "Mark all Phase 1 acceptance tests and failure simulations as passed"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "488e324",
-      "message": "Bump health check threshold from 330s to 420s"
     }
   ]
 }
