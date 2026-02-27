@@ -1,15 +1,20 @@
 {
-  "sloc": 10185,
+  "sloc": 10199,
   "python_sloc": 6429,
-  "swift_sloc": 3756,
+  "swift_sloc": 3770,
   "test_sloc": 6994,
   "test_count": 668,
   "doc_lines": 3299,
-  "total_commits": 109,
+  "total_commits": 110,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-27",
+      "hash": "19c9aa8",
+      "message": "Fix council findings: DeleteResponse shape, MealListView migration, error clearing"
+    },
     {
       "date": "2026-02-27",
       "hash": "0308645",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "12c48e7",
       "message": "Harden pagination cursor, fix threshold docs, add soak test results"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "6c0008b",
-      "message": "Fix pagination gap, health check cold-start, treatments display; add tests"
     }
   ]
 }
