@@ -1,15 +1,20 @@
 {
-  "sloc": 10199,
+  "sloc": 10273,
   "python_sloc": 6429,
-  "swift_sloc": 3770,
+  "swift_sloc": 3844,
   "test_sloc": 6994,
   "test_count": 668,
   "doc_lines": 3299,
-  "total_commits": 110,
+  "total_commits": 111,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-27",
+      "hash": "eec4d28",
+      "message": "iOS chart: add insulin/meal markers, threshold labels, now indicator"
+    },
     {
       "date": "2026-02-27",
       "hash": "19c9aa8",
@@ -504,11 +509,6 @@
       "date": "2026-02-15",
       "hash": "b31b382",
       "message": "Add meals table, schema migration runner, and meal CRUD with validation"
-    },
-    {
-      "date": "2026-02-15",
-      "hash": "12c48e7",
-      "message": "Harden pagination cursor, fix threshold docs, add soak test results"
     }
   ]
 }
