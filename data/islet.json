@@ -4,12 +4,17 @@
   "swift_sloc": 5526,
   "test_sloc": 7485,
   "test_count": 703,
-  "doc_lines": 3304,
-  "total_commits": 119,
+  "doc_lines": 3352,
+  "total_commits": 120,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-02-28",
+      "hash": "16ba91f",
+      "message": "Update docs for multi-user isolation: progress report, README, NEXT_PHASES"
+    },
     {
       "date": "2026-02-28",
       "hash": "9760206",
@@ -504,11 +509,6 @@
       "date": "2026-02-17",
       "hash": "6f2fd75",
       "message": "fix(meal): enforce short-id confirm/reject and sync PR4 docs"
-    },
-    {
-      "date": "2026-02-17",
-      "hash": "c79b35c",
-      "message": "Sync all docs for PR3 completion and Phase 1 soak test pass"
     }
   ]
 }
