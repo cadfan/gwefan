@@ -36,6 +36,7 @@ contentDir = 'content/en'
   env = 'production'
   showReadingTime = true
   showShareButtons = false
+  ShowRssButtonInSectionTermList = true
   showAuthor = false
   showBreadCrumbs = true
   showPostNavLinks = true
