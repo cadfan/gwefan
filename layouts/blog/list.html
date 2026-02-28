@@ -1,0 +1,93 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header blog-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content blog-intro">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages }}
+{{- $paginator := .Paginate $pages }}
+
+{{- range $index, $page := $paginator.Pages }}
+
+{{- if and (eq $paginator.PageNumber 1) (eq $index 0) }}
+{{/* ── Featured first post ── */}}
+<article class="blog-featured" style="animation-delay: 0.1s">
+  <a href="{{ $page.Permalink }}" class="blog-featured-link">
+    <div class="blog-featured-date">
+      <span class="blog-featured-day">{{ $page.Date.Format "02" }}</span>
+      <span class="blog-featured-month">{{ $page.Date.Format "Jan" }}</span>
+    </div>
+    <div class="blog-featured-body">
+      <h2 class="blog-featured-title">{{ $page.Title }}</h2>
+      {{- if $page.Description }}
+      <p class="blog-featured-desc">{{ $page.Description }}</p>
+      {{- end }}
+      <div class="blog-featured-meta">
+        <span>{{ $page.ReadingTime }} min read</span>
+        {{- with $page.Params.tags }}
+        {{- range first 3 . }}
+        <span class="blog-tag">{{ . }}</span>
+        {{- end }}
+        {{- end }}
+      </div>
+    </div>
+  </a>
+</article>
+
+{{- if gt (len $paginator.Pages) 1 }}
+<div class="blog-list-divider"></div>
+{{- end }}
+
+{{- else }}
+{{/* ── Remaining posts ── */}}
+<article class="blog-entry" style="animation-delay: {{ mul (add $index 1) 0.06 }}s">
+  <a href="{{ $page.Permalink }}" class="blog-entry-link">
+    <time class="blog-entry-date" datetime="{{ $page.Date.Format "2006-01-02" }}">
+      <span class="blog-entry-day">{{ $page.Date.Format "02" }}</span>
+      <span class="blog-entry-monthyear">{{ $page.Date.Format "Jan '06" }}</span>
+    </time>
+    <div class="blog-entry-body">
+      <h3 class="blog-entry-title">{{ $page.Title }}</h3>
+      <p class="blog-entry-summary">{{ $page.Summary | plainify | htmlUnescape | truncate 120 }}</p>
+    </div>
+    <span class="blog-entry-reading">{{ $page.ReadingTime }} min</span>
+  </a>
+</article>
+{{- end }}
+
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      &laquo;&nbsp;{{ i18n "prev_page" }}&nbsp;
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{ i18n "next_page" }}&nbsp;&raquo;
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}

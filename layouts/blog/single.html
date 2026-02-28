@@ -1,0 +1,102 @@
+{{- define "main" }}
+
+{{/* Reading progress bar */}}
+<div class="reading-progress" id="reading-progress"></div>
+
+<article class="post-single blog-single">
+  <header class="post-header blog-post-header">
+    {{ partial "breadcrumbs.html" . }}
+
+    {{- with .Params.tags }}
+    <div class="blog-post-tags-top">
+      {{- range first 3 . }}
+      <span class="blog-post-tag">{{ . }}</span>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta blog-post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+      <span class="blog-meta-sep">/</span>
+      <span>{{ .ReadingTime }} min read</span>
+      <span class="blog-meta-sep">/</span>
+      <span>{{ .WordCount }} words</span>
+    </div>
+    {{- end }}
+  </header>
+
+  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer blog-post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    {{- with ($.GetTerms $tags) }}
+    <ul class="post-tags">
+      {{- range . }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+
+    {{/* Custom blog post navigation */}}
+    {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- if and (gt (len $pages) 1) (in $pages . ) }}
+    <nav class="blog-paginav">
+      {{- with $pages.Next . }}
+      <a class="blog-paginav-item blog-paginav-prev" href="{{ .Permalink }}">
+        <span class="blog-paginav-label">&larr; Previous</span>
+        <span class="blog-paginav-title">{{ .Name }}</span>
+      </a>
+      {{- end }}
+      {{- with $pages.Prev . }}
+      <a class="blog-paginav-item blog-paginav-next" href="{{ .Permalink }}">
+        <span class="blog-paginav-label">Next &rarr;</span>
+        <span class="blog-paginav-title">{{ .Name }}</span>
+      </a>
+      {{- end }}
+    </nav>
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+<script>
+  // Reading progress bar
+  (function() {
+    var progress = document.getElementById('reading-progress');
+    if (!progress) return;
+    window.addEventListener('scroll', function() {
+      var winHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (window.scrollY / winHeight) * 100;
+      progress.style.width = Math.min(scrolled, 100) + '%';
+    });
+  })();
+</script>
+
+{{- end }}{{/* end main */}}

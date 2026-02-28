@@ -3,12 +3,4 @@ title: "Blog"
 description: "Notes and writing by Christopher Griffiths"
 ---
 
-Writing about systems, reliability, modelling and lessons learned while building practical software.
-
-Topics may include:
-
-- Designing for unreliable or incomplete data
-- Local-first system design
-- Health data modelling and safety constraints
-- Observability and operational behaviour
-- Simulation and tooling workflows
+Notes on building software systems — architecture decisions, design trade-offs, and lessons from running code in production. Mostly about [islet](/projects/islet/), occasionally about everything else.
