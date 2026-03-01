@@ -1,24 +1,29 @@
 {
-  "sloc": 12417,
+  "sloc": 12421,
   "python_sloc": 6891,
-  "swift_sloc": 5526,
+  "swift_sloc": 5530,
   "test_sloc": 7941,
   "test_count": 769,
-  "doc_lines": 3352,
-  "total_commits": 123,
+  "doc_lines": 3353,
+  "total_commits": 124,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
     {
       "date": "2026-03-01",
-      "hash": "b8672b3",
+      "hash": "2c3d18b",
       "message": "Update griffiths-core submodule to latest"
     },
     {
       "date": "2026-03-01",
-      "hash": "e1bff10",
+      "hash": "8fe2d7f",
       "message": "Add griffiths-core submodule with test and deploy configs"
+    },
+    {
+      "date": "2026-03-01",
+      "hash": "be3cb1c",
+      "message": "iOS: surface template vs AI source in meal estimate chat"
     },
     {
       "date": "2026-03-01",
@@ -504,11 +509,6 @@
       "date": "2026-02-18",
       "hash": "e2c7fad",
       "message": "refactor(daemon): extract shared poll/backfill logic via _DataType callbacks"
-    },
-    {
-      "date": "2026-02-18",
-      "hash": "4d84ced",
-      "message": "refactor(api): consolidate lookup-or-404 helpers and session validation"
     }
   ]
 }
