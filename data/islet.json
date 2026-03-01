@@ -5,11 +5,16 @@
   "test_sloc": 7941,
   "test_count": 769,
   "doc_lines": 3352,
-  "total_commits": 122,
+  "total_commits": 123,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-03-01",
+      "hash": "b8672b3",
+      "message": "Update griffiths-core submodule to latest"
+    },
     {
       "date": "2026-03-01",
       "hash": "e1bff10",
@@ -504,11 +509,6 @@
       "date": "2026-02-18",
       "hash": "4d84ced",
       "message": "refactor(api): consolidate lookup-or-404 helpers and session validation"
-    },
-    {
-      "date": "2026-02-18",
-      "hash": "df54226",
-      "message": "refactor(config): extract default_db_path() to eliminate platform-check duplication"
     }
   ]
 }
