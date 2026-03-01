@@ -5,11 +5,16 @@
   "test_sloc": 7941,
   "test_count": 769,
   "doc_lines": 3352,
-  "total_commits": 121,
+  "total_commits": 122,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-03-01",
+      "hash": "e1bff10",
+      "message": "Add griffiths-core submodule with test and deploy configs"
+    },
     {
       "date": "2026-03-01",
       "hash": "c78bbca",
@@ -504,11 +509,6 @@
       "date": "2026-02-18",
       "hash": "df54226",
       "message": "refactor(config): extract default_db_path() to eliminate platform-check duplication"
-    },
-    {
-      "date": "2026-02-18",
-      "hash": "d343ef0",
-      "message": "Add ChatGPT App meal intake API (Flask, v5 schema, 56 tests)"
     }
   ]
 }
