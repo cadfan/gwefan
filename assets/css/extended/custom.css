@@ -998,3 +998,292 @@ hr {
     grid-column: 1;
   }
 }
+
+
+/* ══════════════════════════════════════════════════
+   PROFILE PAGE — Private reference document
+   ══════════════════════════════════════════════════ */
+
+/* ── Meta bar ── */
+.profile-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--secondary);
+  letter-spacing: 0.02em;
+  line-height: 2;
+}
+
+.profile-meta-label {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.profile-meta-sep {
+  opacity: 0.3;
+  margin: 0 0.4rem;
+}
+
+/* ── Identity grid ── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.5rem;
+}
+
+.profile-card {
+  padding: 0.75rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  background: var(--entry, #fff);
+  transition: border-color 0.2s ease;
+}
+
+.profile-card:hover {
+  border-color: var(--accent);
+}
+
+.profile-card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.profile-card-value {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary);
+  line-height: 1.3;
+}
+
+.profile-card-note {
+  font-size: 0.78rem;
+  color: var(--secondary);
+  margin-top: 0.25rem;
+  line-height: 1.45;
+}
+
+/* ── Project grid ── */
+.profile-project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.5rem;
+}
+
+.profile-project {
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+  border-left: 3px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  background: var(--entry, #fff);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.profile-project:hover {
+  border-left-color: var(--accent);
+  transform: translateX(3px);
+}
+
+.profile-project-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: inline;
+  letter-spacing: -0.01em;
+}
+
+.profile-project-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.12rem 0.4rem;
+  border-radius: 3px;
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.profile-status-active {
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.profile-status-ongoing {
+  color: var(--secondary);
+  border: 1px solid color-mix(in srgb, var(--secondary) 25%, transparent);
+}
+
+.profile-status-exploring {
+  color: var(--secondary);
+  border: 1px solid color-mix(in srgb, var(--secondary) 15%, transparent);
+  opacity: 0.7;
+}
+
+.profile-project-desc {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  line-height: 1.55;
+  margin-top: 0.35rem;
+}
+
+.profile-project-desc a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  text-underline-offset: 2px;
+}
+
+/* ── Working style grid ── */
+.profile-style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.5rem;
+}
+
+.profile-style-item {
+  padding: 0.75rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--accent) 12%, transparent);
+  background: var(--entry, #fff);
+}
+
+.profile-style-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.profile-style-desc {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+/* ── Preferences grid ── */
+.profile-pref-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 1.2rem 0 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.profile-pref {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
+  align-items: baseline;
+}
+
+.profile-pref:last-child {
+  border-bottom: none;
+}
+
+.profile-pref:nth-child(even) {
+  background: color-mix(in srgb, var(--accent) 3%, transparent);
+}
+
+.profile-pref-key {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  min-width: 5rem;
+  flex-shrink: 0;
+}
+
+.profile-pref-val {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+/* ── Education timeline ── */
+.profile-timeline {
+  margin: 1.2rem 0 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.profile-timeline-item {
+  position: relative;
+  padding: 0 0 1.2rem 1rem;
+}
+
+.profile-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.profile-timeline-marker {
+  position: absolute;
+  left: -1.62rem;
+  top: 0.45rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--theme, #fff);
+}
+
+.dark .profile-timeline-marker {
+  border-color: var(--theme, #1a1b1e);
+}
+
+.profile-timeline-title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+.profile-timeline-detail {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  line-height: 1.55;
+  margin-top: 0.15rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 500px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-style-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-pref {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .profile-meta-sep {
+    display: none;
+  }
+
+  .profile-meta-label {
+    display: block;
+    margin-top: 0.3rem;
+  }
+}
