@@ -40,7 +40,7 @@ robots: "noindex, nofollow"
   </div>
   <div class="profile-card">
     <div class="profile-card-label">Age</div>
-    <div class="profile-card-value">~33</div>
+    <div class="profile-card-value">34</div>
     <div class="profile-card-note">T1 diabetic since age 3 — "almost 31 years" as of Jan 2026</div>
   </div>
   <div class="profile-card">
