@@ -19,6 +19,8 @@ robots: "noindex, nofollow"
   <span class="profile-meta-label">range</span> Dec 2022 – Mar 2026
   <span class="profile-meta-sep">|</span>
   <span class="profile-meta-label">generated</span> 11 Mar 2026
+  <span class="profile-meta-sep">|</span>
+  <span class="profile-meta-label">amended</span> 12 Mar 2026
 </div>
 
 ---
@@ -49,12 +51,12 @@ robots: "noindex, nofollow"
   <div class="profile-card">
     <div class="profile-card-label">Work</div>
     <div class="profile-card-value">FedEx subcontractor</div>
-    <div class="profile-card-note">Self-employed delivery driver, Route 124 (SA1 1/2/8). XLWB Sprinter under Skye Couriers</div>
+    <div class="profile-card-note">Self-employed delivery driver, Route 124 (SA1 1/2/8). XLWB Sprinter under Skye Couriers. Previously DPD, APC, Yodel, Amazon Logistics. No personal vehicle</div>
   </div>
   <div class="profile-card">
     <div class="profile-card-label">Health</div>
     <div class="profile-card-value">T1D + pursuing ADHD dx</div>
-    <div class="profile-card-note">Lantus/Novorapid, Libre 3 CGM via Shuggah. Aphantasia. History of clinical depression</div>
+    <div class="profile-card-note">Lantus/Novorapid, Libre 3 CGM via Shuggah. Aphantasia. History of clinical depression. Dental issues linked to diabetes</div>
   </div>
 </div>
 
@@ -104,17 +106,32 @@ Self-reported and pervasive: forgets basal insulin injections, chronically late 
   <div class="profile-project">
     <div class="profile-project-name">griffiths.cymru</div>
     <div class="profile-project-status profile-status-active">active</div>
-    <div class="profile-project-desc">Hugo + PaperMod personal site. Project pages and blog. Active blogging about islet development process.</div>
+    <div class="profile-project-desc">Hugo + PaperMod personal site, self-hosted on Raspberry Pi. Project pages, blog, and Spoke section. Active blogging about islet development. Custom design system: JetBrains Mono headings, IBM Plex Sans body, warm amber accent.</div>
+  </div>
+  <div class="profile-project">
+    <div class="profile-project-name">Spoke</div>
+    <div class="profile-project-status profile-status-active">active</div>
+    <div class="profile-project-desc">Driver community platform. Has its own Discord ("Spoke Driver Community"), dedicated section on griffiths.cymru, and active bug reporting with screen recordings. Community-building for delivery/courier drivers.</div>
+  </div>
+  <div class="profile-project">
+    <div class="profile-project-name">llywio</div>
+    <div class="profile-project-status profile-status-exploring">exploring</div>
+    <div class="profile-project-desc">Experimental route optimisation for multi-stop delivery work. SwiftUI/iOS — doubles as a learning vehicle for Swift development. Explores practical routing and real-world constraints.</div>
   </div>
   <div class="profile-project">
     <div class="profile-project-name">iRacing</div>
     <div class="profile-project-status profile-status-ongoing">ongoing</div>
-    <div class="profile-project-desc">220+ messages. Custom livery design (BMW M2 CS, Porsche 911, AMG GT4, MX-5, etc.) with Welsh "Cymru Motorsports" branding. Telemetry analysis, VR overlays. Moza R5 wheel. Streams to YouTube from Quest 3.</div>
+    <div class="profile-project-desc">220+ messages. Custom livery design (BMW M2 CS, Porsche 911, AMG GT4, MX-5, Mustang GT4, etc.) with Welsh "Cymru Motorsports" branding. Telemetry analysis, VR overlays. Moza R5 wheel + Moza Pit House. Streams to YouTube from Quest 3 via OBS.</div>
   </div>
   <div class="profile-project">
     <div class="profile-project-name">Welsh advocacy</div>
     <div class="profile-project-status profile-status-ongoing">ongoing</div>
     <div class="profile-project-desc">Welsh-themed content, writing in Welsh, exploring animated political videos explaining Wales's economic/political situation. Interest in AI/LLM minority language support.</div>
+  </div>
+  <div class="profile-project">
+    <div class="profile-project-name">wls</div>
+    <div class="profile-project-status profile-status-exploring">exploring</div>
+    <div class="profile-project-desc">Welsh Lorry Simulator — Wales-focused environment for truck simulation. Concept and research phase including mapping, tooling and workflow experimentation.</div>
   </div>
   <div class="profile-project">
     <div class="profile-project-name">Music</div>
@@ -134,7 +151,7 @@ Self-reported and pervasive: forgets basal insulin injections, chronically late 
   </div>
   <div class="profile-style-item">
     <div class="profile-style-title">Multi-AI workflow</div>
-    <div class="profile-style-desc">ChatGPT, Claude (Max sub), and Kimi in complementary roles. Claude Code/Codex for development. "Council validation" — same review prompts to multiple AIs.</div>
+    <div class="profile-style-desc">ChatGPT, Claude (Max sub), and Kimi in complementary roles. Claude Code, Cowork mode, and Codex for development. "Council validation" — same review prompts to multiple AIs. Has spent hundreds on API credits.</div>
   </div>
   <div class="profile-style-item">
     <div class="profile-style-title">Confronts problems head-on</div>
@@ -147,6 +164,10 @@ Self-reported and pervasive: forgets basal insulin injections, chronically late 
   <div class="profile-style-item">
     <div class="profile-style-title">Visual and systematic</div>
     <div class="profile-style-desc">Designs liveries, logos, UI with specific colour/typography preferences. Thinks in systems architecture and data pipelines. Has aphantasia — compensates with external visual tools.</div>
+  </div>
+  <div class="profile-style-item">
+    <div class="profile-style-title">Self-hosting infrastructure</div>
+    <div class="profile-style-desc">Runs Raspberry Pi infrastructure: Pi 5B for islet, separate Pi as web server hosting griffiths.cymru. Deploys via Hugo + rsync. Manages SSH keys, deploy scripts, and DNS across multiple machines (Windows desktop, MacBook Pro, Pis).</div>
   </div>
 </div>
 
