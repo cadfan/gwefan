@@ -5,7 +5,7 @@ description: "Welsh runs through everything I build — navigation apps that spe
 tags: ["welsh", "culture", "projects"]
 ---
 
-<p class="blog-lead">I am a Welsh speaker. Not a heritage learner, not someone who did a Duolingo streak. Welsh is the language I grew up with, the language I think in when I am not concentrating, the language on street signs in the place I live. When I build software, Welsh goes in from the start — not as a translation layer bolted on later, but as a first-class citizen.</p>
+<p class="blog-lead">I am a Welsh speaker. Not someone who did a Duolingo streak — I am wholly fluent, and it is my language of choice. When I build software, Welsh goes in from the start — not as a translation layer bolted on later, but as a first-class citizen.</p>
 
 ## The thread
 
