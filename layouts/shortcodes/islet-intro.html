@@ -119,6 +119,10 @@
     <div class="islet-stat-label">Swift SLOC</div>
   </div>
   <div class="islet-stat">
+    <div class="islet-stat-value">~{{ $data.kotlin_sloc | lang.FormatNumber 0 }}</div>
+    <div class="islet-stat-label">Kotlin SLOC</div>
+  </div>
+  <div class="islet-stat">
     <div class="islet-stat-value">{{ $data.test_count | lang.FormatNumber 0 }} passing</div>
     <div class="islet-stat-label">Tests</div>
   </div>

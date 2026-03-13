@@ -26,8 +26,15 @@ if [ -d "$ISLET_REPO/ios" ]; then
     | xargs -0 grep -v '^\s*$' | grep -v '^\s*//' | wc -l)
 fi
 
+# Kotlin SLOC: non-blank, non-comment lines in android-companion/**/*.kt
+kotlin_sloc=0
+if [ -d "$ISLET_REPO/android-companion" ]; then
+  kotlin_sloc=$(find "$ISLET_REPO/android-companion" -name '*.kt' -print0 \
+    | xargs -0 grep -v '^\s*$' | grep -v '^\s*//' | wc -l)
+fi
+
 # Combined SLOC
-source_sloc=$((python_sloc + swift_sloc))
+source_sloc=$((python_sloc + swift_sloc + kotlin_sloc))
 
 # Test SLOC: non-blank, non-comment lines in tests/**/*.py
 test_sloc=$(find "$ISLET_REPO/tests" -name '*.py' -print0 \
@@ -72,6 +79,7 @@ cat > "$OUTFILE" <<ENDJSON
   "sloc": ${source_sloc},
   "python_sloc": ${python_sloc},
   "swift_sloc": ${swift_sloc},
+  "kotlin_sloc": ${kotlin_sloc},
   "test_sloc": ${test_sloc},
   "test_count": ${test_count},
   "doc_lines": ${doc_lines},
@@ -83,4 +91,4 @@ cat > "$OUTFILE" <<ENDJSON
 }
 ENDJSON
 
-echo "Updated $(basename "$OUTFILE"): ${python_sloc} Python + ${swift_sloc} Swift SLOC, ${test_count} tests, ${total_commits} commits"
+echo "Updated $(basename "$OUTFILE"): ${python_sloc} Python + ${swift_sloc} Swift + ${kotlin_sloc} Kotlin SLOC, ${test_count} tests, ${total_commits} commits"

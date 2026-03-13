@@ -16,7 +16,7 @@ I build local-first systems for continuous glucose monitoring, metabolic analysi
 I develop utilities around sim racing, telemetry and race preparation, focusing on tools that improve workflow rather than add complexity.
 
 **Self-hosted systems**
-I prefer systems that run under direct control rather than depending on external cloud services. Reliability, observability and failure handling are core design priorities.
+I prefer systems that run under direct control rather than depending on external cloud services. Reliability, observability and failure handling are core design priorities. A shared internal toolkit (griffiths-core) standardises build, test, deploy and release across all projects.
 
 **Welsh language and technology**
 I am interested in improving the presence of Cymraeg within technical and computing spaces through translation and tooling.
