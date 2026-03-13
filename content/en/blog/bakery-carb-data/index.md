@@ -11,7 +11,7 @@ tags: ["islet", "diabetes", "self-hosting"]
 
 islet has a food template system. When you log a meal, it checks the description against a library of known foods and returns an instant carbohydrate estimate without needing an AI call. The library covers packaged foods with published nutritional data — Tunnock's Caramel Wafers, Penguin bars, sliced bread by brand and thickness.
 
-But the foods I eat most often are not packaged. They are from local bakeries, takeaways, and the work canteen. The nutritional data does not exist online. Nobody has entered "Jenkins Bakery corned beef pasty" into MyFitnessPal with any accuracy. The template system had a gap exactly where it mattered most.
+But the foods I eat most often are not packaged. They are from local bakeries, takeaways, and the cafe by the docks. The nutritional data does not exist online. Nobody has entered "Jenkins Bakery corned beef pasty" into MyFitnessPal with any accuracy. The template system had a gap exactly where it mattered most.
 
 ## The email
 
@@ -19,7 +19,7 @@ I emailed Jenkins Bakery. From my self-hosted mail server. To their public addre
 
 The email was short: I have Type 1 diabetes, I buy your pasties regularly, I need the carbohydrate content per pasty to dose insulin correctly. Do you have nutritional information you can share?
 
-They replied the next day with a spreadsheet attached. Carbohydrates per 100g and per portion for their main product range. Exactly what I needed.
+They replied the next day with a spreadsheet attached. Carbohydrates per 100g for their main product range. Not per portion — but weighing a pasty once and doing the maths is a solved problem.
 
 <blockquote class="blog-pullquote">Sometimes the best data pipeline is an email.</blockquote>
 
