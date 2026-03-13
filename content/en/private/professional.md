@@ -49,8 +49,8 @@ robots: "noindex, nofollow"
   </div>
   <div class="profile-card">
     <div class="profile-card-label">Health</div>
-    <div class="profile-card-value">T1D, managed</div>
-    <div class="profile-card-note">Lantus/Novorapid, Libre 3 CGM. Aphantasia</div>
+    <div class="profile-card-value">T1D + ADHD</div>
+    <div class="profile-card-note">Lantus/Novorapid, Libre 3 CGM. ADHD, pursuing treatment. Aphantasia</div>
   </div>
 </div>
 
@@ -72,15 +72,15 @@ Welsh identity is foundational. Writes in Welsh, corrects Welsh errors in profes
 
 ### Technical problem-solver
 
-Formal CS exposure — A/AS-level Computing (programming and networking) and a year of CS modules through the medium of Welsh at Aberystwyth — supplemented by nearly two decades of self-directed learning. K&R's *The C Programming Language* read repeatedly since his teens. Founded Ubuntu Cymru (LoCo team) as a teenager. Gravitates toward designing complete architectures before writing code. Thinks in systems, not scripts.
+Formal CS exposure — A/AS-level Computing (programming and networking) and university modules at Aberystwyth, all through the medium of Welsh — supplemented by nearly two decades of self-directed learning. K&R's *The C Programming Language* read repeatedly since his teens. Founded Ubuntu Cymru (LoCo team) as a teenager. Gravitates toward designing complete architectures before writing code. Thinks in systems, not scripts.
 
 ### Driven by ambition beyond circumstance
 
-Earned the highest Welsh entrance exam score in the country. HGV aspirations limited by diabetes medicals. Channels energy into building a strong technical portfolio and shipping real projects outside of working hours.
+Earned the highest marks nationally in both the Welsh and Computer Science entrance exams. HGV aspirations limited by diabetes medicals. Channels energy into building a strong technical portfolio and shipping real projects outside of working hours. Perfect driving record — passed every test first time, no points in nearly 20 years of daily driving.
 
-### High-intensity focus
+### ADHD-shaped focus
 
-Hyperfocuses productively — 50 commits to a major project in a single week. Specification-first approach: writes architecture documents before implementation, then executes rapidly once the foundation is solid.
+Pursuing formal treatment. Hyperfocuses productively — 50 commits to a major project in a single week. Output is spiky: bursts of extraordinary productivity driven by deep interest. Self-aware about it and works around executive function challenges systematically rather than ignoring them.
 
 ---
 
@@ -195,7 +195,7 @@ Hyperfocuses productively — 50 commits to a major project in a single week. Sp
     <div class="profile-timeline-marker"></div>
     <div class="profile-timeline-content">
       <div class="profile-timeline-title">Aberystwyth University</div>
-      <div class="profile-timeline-detail">Entered with highest Welsh entrance exam score nationally (scholarship). Studied Welsh language & literature, language policy, international relations, computer science, Breton, Irish, and creative writing.</div>
+      <div class="profile-timeline-detail">Highest marks nationally in both Welsh and Computer Science entrance exams. Merit Award, unconditional offer, scholarship. All modules through the medium of Welsh — Welsh language & literature, language policy, international relations, computer science (C, Haskell, Java), Breton, Irish, and creative writing.</div>
     </div>
   </div>
   <div class="profile-timeline-item">
@@ -207,8 +207,29 @@ Hyperfocuses productively — 50 commits to a major project in a single week. Sp
   <div class="profile-timeline-item">
     <div class="profile-timeline-marker"></div>
     <div class="profile-timeline-content">
-      <div class="profile-timeline-title">Wolfestone Translation</div>
-      <div class="profile-timeline-detail">Professional linguist / Project Manager, 2015–2017</div>
+      <div class="profile-timeline-title">Wolfestone Translation, Swansea (2015–2017)</div>
+      <div class="profile-timeline-detail">Professional linguist / Project Manager. Managed largest Welsh language contracts. Translated ~50,000 words/month outside work hours. Also freelance subtitling for TV/film.</div>
+    </div>
+  </div>
+  <div class="profile-timeline-item">
+    <div class="profile-timeline-marker"></div>
+    <div class="profile-timeline-content">
+      <div class="profile-timeline-title">Cymdeithas yr Iaith Gymraeg, Cardiff (2018–2019)</div>
+      <div class="profile-timeline-detail">Field Officer for the Welsh language rights organisation.</div>
+    </div>
+  </div>
+  <div class="profile-timeline-item">
+    <div class="profile-timeline-marker"></div>
+    <div class="profile-timeline-content">
+      <div class="profile-timeline-title">Axel Ventures SL, Polop, Spain (2020–2021)</div>
+      <div class="profile-timeline-detail">Founded and operated a wholesale electronics distribution company. Dealt in consumer electronics at volume. Closed voluntarily to return to Wales.</div>
+    </div>
+  </div>
+  <div class="profile-timeline-item">
+    <div class="profile-timeline-marker"></div>
+    <div class="profile-timeline-content">
+      <div class="profile-timeline-title">Courier / delivery (2022–present)</div>
+      <div class="profile-timeline-detail">Self-employed across Amazon Logistics, DPD, Yodel, FedEx. Currently FedEx subcontractor via Skye Couriers. ~3 years experience, up to 280 parcels/day. Perfect driving record.</div>
     </div>
   </div>
   <div class="profile-timeline-item">
@@ -217,6 +238,25 @@ Hyperfocuses productively — 50 commits to a major project in a single week. Sp
       <div class="profile-timeline-title">Self-taught programmer</div>
       <div class="profile-timeline-detail">K&R's <em>The C Programming Language</em> over ~20 years. Founded Ubuntu Cymru (LoCo team) as a teenager. Long-term open source involvement.</div>
     </div>
+  </div>
+</div>
+
+---
+
+## Hobbies & Dedication
+
+<div class="profile-style-grid">
+  <div class="profile-style-item">
+    <div class="profile-style-title">Sim Racing (iRacing)</div>
+    <div class="profile-style-desc">~20 hours/week commitment. Races in VR (Meta Quest 3). Moza R5 wheelbase + GT Omega cockpit. Designs Welsh-themed "Cymru Motorsport" liveries. Runs helper apps (CrewChief, Sound Shift, Trophi AI). Nordschleife specialist.</div>
+  </div>
+  <div class="profile-style-item">
+    <div class="profile-style-title">Truck Simulation</div>
+    <div class="profile-style-desc">Euro Truck Simulator 2 / American Truck Simulator in VR. Member of Streamline Haulage Group (Discord). Convoys twice weekly. Aspires to build Welsh Lorry Simulator (WLS).</div>
+  </div>
+  <div class="profile-style-item">
+    <div class="profile-style-title">Gaming (co-op with nephew)</div>
+    <div class="profile-style-desc">Ghost Recon Wildlands/Breakpoint, Battlefield 6, Bomber Crew. Xbox Game Pass subscriber. Evenings and weekends.</div>
   </div>
 </div>
 
