@@ -3,7 +3,13 @@
 # Called by deploy.sh before hugo --minify.
 set -e
 
-ISLET_REPO="${ISLET_REPO:-$HOME/Documents/GitHub/islet}"
+# Load ISLET_REPO from deploy.conf if available, fall back to env or default
+SCRIPT_DIR="$(dirname "$0")"
+if [ -f "$SCRIPT_DIR/../deploy.conf" ]; then
+  _islet_repo=$(grep '^islet_repo=' "$SCRIPT_DIR/../deploy.conf" 2>/dev/null | cut -d= -f2-)
+  [ -n "$_islet_repo" ] && ISLET_REPO="${ISLET_REPO:-$(eval echo "$_islet_repo")}"
+fi
+ISLET_REPO="${ISLET_REPO:-$HOME/islet}"
 OUTFILE="$(dirname "$0")/../data/islet.json"
 
 # Hardcoded (rarely change)
