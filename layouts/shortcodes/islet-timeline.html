@@ -186,14 +186,34 @@
     <div class="tl-desc">Nightscout polling disabled. Both phones posting directly to islet API. Three commands, no data gap. Nightscout now receives relayed data only — optional infrastructure, not a dependency.</div>
   </li>
 
-  <li class="tl-item" data-status="current">
+  <li class="tl-item" data-status="complete">
     <span class="tl-dot"></span>
     <div class="tl-header">
       <span class="tl-phase">Phase 4.0 — iOS Companion App</span>
-      <span class="tl-badge">In Progress</span>
+      <span class="tl-badge">Complete</span>
     </div>
-    <div class="tl-desc">Native SwiftUI app with glucose dashboard, AI-assisted food logging, meal history, and Warm Amber theme. Built with XcodeGen, async/await actors, stateless estimation API.</div>
-    <div class="tl-stat">4 screens &middot; 1,608 Swift SLOC</div>
+    <div class="tl-desc">Native SwiftUI app with glucose dashboard, AI-assisted food logging, camera capture, meal history, scrollable chart, component type-ahead, and Warm Amber theme. SwiftData offline cache with background sync.</div>
+    <div class="tl-stat">47 Swift files &middot; 3,500+ SLOC &middot; 23 tests</div>
+  </li>
+
+  <li class="tl-item" data-status="complete">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 4.0a — Platform Hardening</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">Six infrastructure plans shipped in one session: meal-to-treatment relay, tiered rate limiter, AI vision upgrade, component meal architecture, server sync infrastructure (schema v7+v8), and iOS offline cache. Nightscout/Zukka compatibility verified with 113 integration tests.</div>
+    <div class="tl-stat">1,750 tests &middot; 162 files &middot; 24,000 lines added</div>
+  </li>
+
+  <li class="tl-item" data-status="current">
+    <span class="tl-dot"></span>
+    <div class="tl-header">
+      <span class="tl-phase">Phase 4.0b — Alerting &amp; Time-in-Range</span>
+      <span class="tl-badge">Complete</span>
+    </div>
+    <div class="tl-desc">Alert detection engine (hypo, hyper, stale CGM, rapid drop) with configurable thresholds. Time-in-range dashboard with daily trend charts across 7/14/30/90-day periods. Both deployed to production.</div>
+    <div class="tl-stat">30 new tests &middot; TIR: 51.8% over 14K+ CGM entries</div>
   </li>
 
   <li class="tl-item" data-status="planned">
@@ -208,10 +228,10 @@
   <li class="tl-item" data-status="planned">
     <span class="tl-dot"></span>
     <div class="tl-header">
-      <span class="tl-phase">Phase 4.2 — Android</span>
-      <span class="tl-badge">Future</span>
+      <span class="tl-phase">Phase 4.2 — Push Notifications</span>
+      <span class="tl-badge">Planned</span>
     </div>
-    <div class="tl-desc">Android companion app. Scope TBD based on device usage.</div>
+    <div class="tl-desc">APNs/FCM push for follower hypo/hyper alerts. Backend alerting engine already deployed; needs mobile delivery infrastructure.</div>
   </li>
 
 </ol>
