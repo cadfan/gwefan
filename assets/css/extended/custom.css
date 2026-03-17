@@ -1287,3 +1287,184 @@ hr {
     margin-top: 0.3rem;
   }
 }
+
+
+/* ══════════════════════════════════════════════════
+   WAVE TIMELINE — Implementation plan visualization
+   ══════════════════════════════════════════════════ */
+
+.wave-timeline {
+  margin: 2rem 0 2.5rem;
+  position: relative;
+}
+
+/* Wave group — a single implementation phase */
+.wave-group {
+  position: relative;
+}
+
+.wave-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+}
+
+.wave-note {
+  font-weight: 400;
+  color: var(--secondary);
+  opacity: 0.6;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin-left: 0.3rem;
+}
+
+.wave-plans {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Individual plan card */
+.wave-plan {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+  background: var(--entry, #fff);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-plan::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.wave-plan:hover {
+  border-color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* Plan number — monospace badge */
+.wave-plan-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  min-width: 1.8rem;
+  text-align: center;
+  padding-top: 0.1rem;
+  opacity: 0.7;
+}
+
+.wave-plan-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.wave-plan-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.wave-plan-desc {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  line-height: 1.55;
+}
+
+.wave-plan-desc code {
+  font-size: 0.78rem;
+  padding: 0.1rem 0.35rem;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border-radius: 3px;
+  color: var(--accent);
+}
+
+/* Risk badge */
+.wave-plan-risk {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+}
+
+/* Risk level colours */
+.wave-plan-low::before { background: #4ade80; }
+.wave-plan-low .wave-plan-risk {
+  color: #4ade80;
+  border: 1px solid color-mix(in srgb, #4ade80 35%, transparent);
+}
+
+.wave-plan-med::before { background: #fb923c; }
+.wave-plan-med .wave-plan-risk {
+  color: #fb923c;
+  border: 1px solid color-mix(in srgb, #fb923c 35%, transparent);
+}
+
+.wave-plan-high::before { background: #f87171; }
+.wave-plan-high .wave-plan-risk {
+  color: #f87171;
+  border: 1px solid color-mix(in srgb, #f87171 35%, transparent);
+}
+
+.wave-plan-highest::before { background: #ef4444; }
+.wave-plan-highest .wave-plan-risk {
+  color: #ef4444;
+  border: 1px solid color-mix(in srgb, #ef4444 35%, transparent);
+}
+
+/* Connector between waves — dotted vertical line */
+.wave-connector {
+  width: 2px;
+  height: 1.5rem;
+  margin: 0 auto;
+  background: repeating-linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--accent) 30%, transparent) 0px,
+    color-mix(in srgb, var(--accent) 30%, transparent) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .wave-plan {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .wave-plan-risk {
+    margin-left: auto;
+  }
+
+  .wave-plan-num {
+    font-size: 1.1rem;
+    min-width: 1.4rem;
+  }
+}
