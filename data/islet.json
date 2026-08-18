@@ -5,11 +5,16 @@
   "test_sloc": 20867,
   "test_count": 1821,
   "doc_lines": 3558,
-  "total_commits": 192,
+  "total_commits": 193,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-08-18",
+      "hash": "2fccf7a",
+      "message": "docs: record Zukka ingest hotfix deployment"
+    },
     {
       "date": "2026-08-18",
       "hash": "25f3a97",
@@ -504,11 +509,6 @@
       "date": "2026-02-25",
       "hash": "2b521e0",
       "message": "Add next_expected_ms to glucore/status for smart client polling"
-    },
-    {
-      "date": "2026-02-25",
-      "hash": "229851b",
-      "message": "Add treatment logger to iOS app and web UI"
     }
   ]
 }
