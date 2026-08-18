@@ -1,15 +1,20 @@
 {
-  "sloc": 30193,
-  "python_sloc": 14331,
+  "sloc": 30240,
+  "python_sloc": 14378,
   "swift_sloc": 15862,
-  "test_sloc": 20800,
-  "test_count": 1817,
-  "doc_lines": 3556,
-  "total_commits": 191,
+  "test_sloc": 20867,
+  "test_count": 1821,
+  "doc_lines": 3558,
+  "total_commits": 192,
   "language": "Python 3.13.5",
   "runtime": "Raspberry Pi 5B, systemd, SQLite",
   "status": "Phase 4 — Native Clients & Direct Sensor",
   "commits": [
+    {
+      "date": "2026-08-18",
+      "hash": "25f3a97",
+      "message": "fix(api): accept valid records from mixed entry batches"
+    },
     {
       "date": "2026-08-18",
       "hash": "b21d964",
@@ -504,11 +509,6 @@
       "date": "2026-02-25",
       "hash": "229851b",
       "message": "Add treatment logger to iOS app and web UI"
-    },
-    {
-      "date": "2026-02-25",
-      "hash": "67224c8",
-      "message": "Add treatment input, live dashboard, and smart polling goals"
     }
   ]
 }
