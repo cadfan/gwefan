@@ -6,3 +6,4 @@ resources/
 deploy.sh
 translation/
 .gwefan-commit-msg
+.gstack/
